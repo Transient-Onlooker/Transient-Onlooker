@@ -64,7 +64,7 @@ Tools        Arduino • Git • PowerShell
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
 | [**inventory-management-spreadsheet**](https://github.com/Transient-Onlooker/inventory-management-spreadsheet.git) | 재고관리 시스템 | Python |
-| [**personnel-management-spreadsheet**](https://github.com/Transient-Onlooker/personnel-management-spreadsheet.git) | 인원관리 시스템 | Python |
+| [**personnel-management-spreadsheet**](https://github.com/Transient-Onlooker/personnel-management-spreadsheet.git) | 인원관리 시스템(전 재고관리) | Python |
 
 ---
 
@@ -92,7 +92,7 @@ Tools        Arduino • Git • PowerShell
 
 ## 🔗 연결
 
-- 📧 이메일: [GitHub 프로필 참조]
+- 📧 이메일: [junuh145858@gmail.com]
 - 🐙 GitHub: [@Transient-Onlooker](https://github.com/Transient-Onlooker)
 - 💬 질문이 있으신가요? Issues를 통해 연락해주세요!
 
