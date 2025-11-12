@@ -2,7 +2,7 @@
 
 <div align="center">
   
-**고등학생 개발자 | Python × Kotlin | 시스템 설계 & 역학 모델링| 항공우주공학과 지망생**
+**고등학생 개발자 | Python × Kotlin | 시스템 설계 & 역학 모델링**
 
 [GitHub](https://github.com/Transient-Onlooker) • [Projects](#-주요-프로젝트)
 
@@ -37,34 +37,34 @@ Tools        Arduino • Git • PowerShell
 ### 🦠 역학 모델링
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| **sir-model-differential-equations** | 전염병 확산(SIR 미분방정식) - 고급 분석 | Python |
-| **sir-model-classic** | 전염병 확산(고전 모델) - 기초 구현 | Python |
+| [**sir-model-differential-equations**](https://github.com/Transient-Onlooker/sir-model-differential-equations.git) | 전염병 확산(SIR 미분방정식) - 고급 분석 | Python |
+| [**sir-model-classic**](https://github.com/Transient-Onlooker/sir-model-classic.git) | 전염병 확산(고전 모델) - 기초 구현 | Python |
 
 ### 📱 안드로이드 애플리케이션
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| **sigup-android-source** | 시급하다 - 학교 급식 & 시간표 관리앱 | Kotlin |
-| **word-app-android-source** | 단어앱 - 영어 단어 학습 앱 | Kotlin |
+| [**sigup-android-source**](https://github.com/Transient-Onlooker/sigup-android-source.git) | 시급하다 - 아르바이트 급여 관리 앱 | Kotlin |
+| [**word-app-android-source**](https://github.com/Transient-Onlooker/word-app-android-source.git) | 단어앱 - 영어 단어 학습 앱 | Kotlin |
 
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| **chatgpt-vocab-generator** | 단어보붕 생성기(ChatGPT) | Python |
-| **gemini-vocab-generator** | 단어보붕 생성기(Gemini) | Python |
+| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) | Python |
+| [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기(Gemini) | Python |
 
 ### 🎵 유틸리티 & 생산성 도구
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| **music-box-score-converter** | 오르골 악보 변환기 | Python |
-| **golf-schedule-generator** | 골프 일정 생성기 | Python |
-| **chat-application** | WebSocket 기반 실시간 채팅 | Python |
-| **CommandRunner** | 자동화 명령어 실행 도구 | Python |
+| [**music-box-score-converter**](https://github.com/Transient-Onlooker/music-box-score-converter.git) | 오르골 악보 변환기 | Python |
+| [**golf-schedule-generator**](https://github.com/Transient-Onlooker/golf-schedule-generator.git) | 골프 일정 생성기 | Python |
+| [**chat-application**](https://github.com/Transient-Onlooker/chat-application.git) | WebSocket 기반 실시간 채팅 | Python |
+| [**CommandRunner**](https://github.com/Transient-Onlooker/CommandRunner.git) | 자동화 명령어 실행 도구 | Python |
 
 ### 📊 데이터 관리 시스템
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| **inventory-management-spreadsheet** | 재고관리 시스템 | Python |
-| **personnel-management-spreadsheet** | 인원관리 시스템 | Python |
+| [**inventory-management-spreadsheet**](https://github.com/Transient-Onlooker/inventory-management-spreadsheet.git) | 재고관리 시스템 | Python |
+| [**personnel-management-spreadsheet**](https://github.com/Transient-Onlooker/personnel-management-spreadsheet.git) | 인원관리 시스템 | Python |
 
 ---
 
