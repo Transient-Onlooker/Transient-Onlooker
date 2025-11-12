@@ -85,6 +85,7 @@ Tools        Arduino • Git • PowerShell
   • 역학 모델 고도화 (SEIR 모델, 네트워크 분석)
   • 안드로이드 앱 기능 확장
   • Python 유틸리티 자동화 도구
+  • AI 길찾기 학습
 ```
 
 ---
