@@ -38,7 +38,7 @@ Tools        Arduino • Git • PowerShell
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
 | [**sir-model-differential-equations**](https://github.com/Transient-Onlooker/sir-model-differential-equations.git) | 전염병 확산(SIR 미분방정식) - 고급 분석 | Python |
-| [**sir-model-classic**](https://github.com/Transient-Onlooker/sir-model-classic.git) | 전염병 확산(고전 모델) - 기초 구현 | Python |
+| [**sir-model-classic**](https://github.com/Transient-Onlooker/sir-model-classic.git) | 전염병 확산(고전 모델) - 기초 구현(GUI 기반) | Python |
 
 ### 📱 안드로이드 애플리케이션
 | 프로젝트 | 설명 | 언어 |
