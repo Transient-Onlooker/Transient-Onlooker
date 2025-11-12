@@ -2,7 +2,7 @@
 
 <div align="center">
   
-**고등학생 개발자 | Python × Kotlin | 시스템 설계 & 역학 모델링**
+**고등학생 개발자 | Python × Kotlin | 시스템 설계 & 역학 모델링| 항공우주공학과 지망생**
 
 [GitHub](https://github.com/Transient-Onlooker) • [Projects](#-주요-프로젝트)
 
