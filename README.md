@@ -17,7 +17,7 @@
 ### 🛠️ Tech Stack
 
 ```
-Languages    Python • Kotlin • C • Assembly
+Languages    Python • Kotlin • C++(Learning)
 Frontend     Tkinter • Android (Kotlin)
 Backend      WebSocket • REST APIs
 Modeling     TensorFlow • NumPy • Differential Equations
