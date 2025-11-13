@@ -43,7 +43,7 @@ Tools        Arduino • Git • PowerShell
 ### 📱 안드로이드 애플리케이션
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**sigup-android-source**](https://github.com/Transient-Onlooker/sigup-android-source.git) | 시급하다 - 아르바이트 급여 관리 앱 | Kotlin |
+| [**sigup-android-source**](https://github.com/Transient-Onlooker/sigup-android-source.git) | 시급하다 - 학교 시간표 급식표 관리 앱 | Kotlin |
 | [**word-app-android-source**](https://github.com/Transient-Onlooker/word-app-android-source.git) | 단어앱 - 영어 단어 학습 앱 | Kotlin |
 
 ### 🤖 AI & 자동화
