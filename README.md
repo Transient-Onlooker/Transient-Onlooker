@@ -58,7 +58,6 @@ Tools        Arduino • Git • PowerShell
 | [**music-box-score-converter**](https://github.com/Transient-Onlooker/music-box-score-converter.git) | 오르골 악보 변환기 | Python |
 | [**golf-schedule-generator**](https://github.com/Transient-Onlooker/golf-schedule-generator.git) | 골프 일정 생성기 | Python |
 | [**chat-application**](https://github.com/Transient-Onlooker/chat-application.git) | WebSocket 기반 실시간 채팅 | Python |
-| [**CommandRunner**](https://github.com/Transient-Onlooker/CommandRunner.git) | 자동화 명령어 실행 도구 | Python |
 
 ### 📊 데이터 관리 시스템
 | 프로젝트 | 설명 | 언어 |
