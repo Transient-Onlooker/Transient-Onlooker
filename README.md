@@ -96,6 +96,7 @@ Tools        Arduino • Git • PowerShell
 ## 🔗 연결
 
 - 📧 이메일: [junuh145858@gmail.com]
+- 📱 Discord: [nomoregimal]
 - 🐙 GitHub: [@Transient-Onlooker](https://github.com/Transient-Onlooker)
 - 💬 질문이 있으신가요? Issues를 통해 연락해주세요!
 
