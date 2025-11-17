@@ -65,6 +65,10 @@ Tools        Arduino • Git • PowerShell
 | [**inventory-management-spreadsheet**](https://github.com/Transient-Onlooker/inventory-management-spreadsheet.git) | 재고관리 시스템 | Python |
 | [**personnel-management-spreadsheet**](https://github.com/Transient-Onlooker/personnel-management-spreadsheet.git) | 인원관리 시스템(전 재고관리) | Python |
 
+### 🕹️ 게임
+| 프로젝트 | 설명 | 언어 |
+|---------|------|------|
+| [**kim-game**](https://github.com/Transient-Onlooker/kim-game) | RPG 게임(외주) | Python |
 ---
 
 ## 💡 관심 분야
