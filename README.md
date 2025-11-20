@@ -49,8 +49,9 @@ Tools        Arduino • Git • PowerShell
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) | Python |
+| [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | Python |
 | [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기(Gemini) | Python |
+| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) Go 리팩토링안 | Go |
 
 ### 🎵 유틸리티 & 생산성 도구
 | 프로젝트 | 설명 | 언어 |
