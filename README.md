@@ -70,7 +70,7 @@ Tools        Arduino • Git • PowerShell
 |---------|------|------|
 | [**kim-game**](https://github.com/Transient-Onlooker/kim-game) | RPG 게임(외주) | Python |
 ---
-### 현재 종료된 프로젝트
+### ❌ 현재 종료된 프로젝트
 | 프로젝트 | 설명 | 언어 | 종료 사유 |
 |---------|------|------|------|
 | [**chatgpt-vocab-generator-wails**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | 단어보붕 생성기(ChatGPT) : Wails를 이용한 GUI 개선안 | Go | Wails를 이용할 경우 크로스 컴파일이 어려움 |
