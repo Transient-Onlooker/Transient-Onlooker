@@ -49,9 +49,8 @@ Tools        Arduino • Git • PowerShell
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | Python |
 | [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기(Gemini) | Python |
-| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) Go 리팩토링안 | Go |
+| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) : TUI | Go |
 
 ### 🎵 유틸리티 & 생산성 도구
 | 프로젝트 | 설명 | 언어 |
@@ -71,7 +70,13 @@ Tools        Arduino • Git • PowerShell
 |---------|------|------|
 | [**kim-game**](https://github.com/Transient-Onlooker/kim-game) | RPG 게임(외주) | Python |
 ---
+### 현재 종료된 프로젝트
+| 프로젝트 | 설명 | 언어 | 종료 사유 |
+|---------|------|------|------|
+| [**chatgpt-vocab-generator-wails**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | 단어보붕 생성기(ChatGPT) : Wails를 이용한 GUI 개선안 | Go | Wails를 이용할 경우 크로스 컴파일이 어려움 |
+| [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | Python | Python을 이용하면 크로스 컴파일이 어려움 |
 
+---
 ## 💡 관심 분야
 
 - 🔬 **과학**: 3D 모델링, 시뮬레이션, 데이터 분석
