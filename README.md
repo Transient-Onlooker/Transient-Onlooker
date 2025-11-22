@@ -28,7 +28,7 @@ Tools        Arduino • Git • PowerShell
 
 ## 📊 GitHub Statistics
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Transient-Onlooker&layout=compact&theme=codeSTACKr)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Transient-Onlooker&layout=donut&theme=codeSTACKr)
 
 ---
 
