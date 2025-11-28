@@ -20,7 +20,7 @@
 |---------------|--------------|
 | **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 | **Frontend**  | ![Tkinter](https://img.shields.io/badge/Tkinter-2C5E87?style=flat-square&logo=python&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) |
-| **Backend**   | ![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=flat-square&logo=websocket&logoColor=white) ![API](https://img.shields.io/badge/REST_API-02A8F4?style=flat-square&logo=api&logoColor=white) |
+| **Backend**   | ![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=flat-square&logo=websocket&logoColor=white) ![API](https://img.shields.io/badge/REST_API-02A8F4?style=flat-square&logoColor=white) |
 | **Modeling**  | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) |
 | **Tools**     | ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=white) ![Fusion 360](https://img.shields.io/badge/Fusion%20360-F4511E?style=flat-square&logo=autodesk-fusion360&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
 
@@ -101,79 +101,10 @@
 
 ## 🔗 연결
 
-<details>
-  <summary>Code</summary>
-  
-  ```go
-  package main
-
-  import (
-    "encoding/json"
-    "fmt"
-  )
-
-  // Profile stores user profile information.
-  type Profile struct {
-    Name        string
-    Description string
-    Contacts    map[string]string
-  }
-
-  // NewProfile creates a new Profile instance with my information.
-  func NewProfile() *Profile {
-    return &Profile{
-      Name:        "Transient-Onlooker",
-      Description: "항공우주공학을 사랑하는 개발자. 실생활의 문제를 코드로 해결하고, 떠오르는 아이디어들을 코드로 만들어보고 있습니다. 🚀",
-      Contacts: map[string]string{
-        "email":   "junuh145858@gmail.com",
-        "discord": "nomoregimal",
-        "github":  "Transient-Onlooker",
-      },
-    }
-  }
-
-  // PrintName prints the full name.
-  func (p *Profile) PrintName() *Profile {
-    fmt.Println(p.Name)
-    return p
-  }
-
-  // PrintDescription prints the description.
-  func (p *Profile) PrintDescription() *Profile {
-    fmt.Println(p.Description)
-    return p
-  }
-
-  // PrintContacts prints the contact information as a JSON string.
-  func (p *Profile) PrintContacts() *Profile {
-    contactsJSON, err := json.MarshalIndent(p.Contacts, "", "  ")
-    if err != nil {
-      fmt.Println("Error marshalling contacts to JSON:", err)
-      return p
-    }
-    fmt.Println(string(contactsJSON))
-    return p
-  }
-
-  func main() {
-    NewProfile().
-      PrintName().
-      PrintDescription().
-      PrintContacts()
-  }
-  ```
-</details>
-
-```
-// Output:
-// Transient-Onlooker
-// 항공우주공학을 사랑하는 개발자. 실생활의 문제를 코드로 해결하고, 떠오르는 아이디어들을 코드로 만들어보고 있습니다. 🚀
-// {
-//   "discord": "nomoregimal",
-//   "email": "junuh145858@gmail.com",
-//   "github": "Transient-Onlooker"
-// }
-```
+- [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:junuh145858@gmail.com)
+- [![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/users/nomoregimal)
+- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Transient-Onlooker)
+- ❓ **질문이 있으신가요?** [Issues](https://github.com/Transient-Onlooker/Transient-Onlooker/issues)를 통해 연락해주세요!
 ---
 
 > **0.1%의 창의적 인간이 미래를 발명하고, 0.9%의 통찰력 있는 인간이 그것을 사업화하며, 99%의 잉여인간은 역사의 변화를 모른 채 따라갈 뿐이다. (제레미 라프킨)**
