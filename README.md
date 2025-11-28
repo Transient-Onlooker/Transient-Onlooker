@@ -1,4 +1,4 @@
-<div align="center">
+d<div align="center">
   <a href="./README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white"/></a>
   <a href="./README.kr.md"><img src="https://img.shields.io/badge/Language-Korean-red?style=flat-square&logo=google-translate&logoColor=white"/></a>
 </div>
@@ -95,7 +95,7 @@
 <div align="left">
 
 - 🔬 **과학** <br/>
-  ![3D Modeling](https://img.shields.io/badge/3D_Modeling-000000?style=flat-square&logo=blender&logoColor=white) ![Simulation](https://img.shields.io/badge/Simulation-Scientific-blue?style=flat-square) ![Data Analysis](https://img.shields.io/badge/Data_Analysis-Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+  ![3D Modeling](https://img.shields.io/badge/3D_Modeling-F47E3C?style=flat-square&logo=autodeskfusion360&logoColor=white) ![Simulation](https://img.shields.io/badge/Simulation-Scientific-blue?style=flat-square) ![Data Analysis](https://img.shields.io/badge/Data_Analysis-22B8CF?style=flat-square&logo=perplexity&logoColor=white)
 
 - 📱 **모바일** <br/>
   ![Android](https://img.shields.io/badge/Android_Dev-3DDC84?style=flat-square&logo=android&logoColor=white) ![UX Design](https://img.shields.io/badge/UX_Design-F24E1E?style=flat-square&logo=figma&logoColor=white)
