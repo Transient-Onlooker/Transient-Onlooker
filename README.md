@@ -1,4 +1,4 @@
-d<div align="center">
+<div align="center">
   <a href="./README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white"/></a>
   <a href="./README.kr.md"><img src="https://img.shields.io/badge/Language-Korean-red?style=flat-square&logo=google-translate&logoColor=white"/></a>
 </div>
