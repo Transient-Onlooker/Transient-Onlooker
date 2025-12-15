@@ -49,7 +49,7 @@
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 악보 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 마크 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기(Gemini) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) : TUI | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 
