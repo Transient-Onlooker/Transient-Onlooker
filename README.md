@@ -45,7 +45,7 @@
 |---------|------|------|
 | [**sigup-android-source**](https://github.com/Transient-Onlooker/sigup-android-source.git) | 시급하다 - 학교 시간표 급식표 관리 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 | [**word-app-android-source**](https://github.com/Transient-Onlooker/word-app-android-source.git) | 단어앱 - 영어 단어 학습 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
-| [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | 단어앱 - 영어 단어 학습 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | openflight4and - FocusFlight 를 벤치마킹하여 개발한 안드로이드 집중 타이머 앱입니다 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
@@ -87,17 +87,6 @@
 - 🦫 **Golang**: 자동화, TUI 개발
 - 💻 **시스템**: 웹소켓 통신, 데이터 구조, 알고리즘, AI 강화학습
 - 🚀 **항공우주**: 우주과학, 로켓 공학
-
----
-
-## 📈 최근 활동
-
-```
-🔧 지속적으로 개발 중인 프로젝트:
-  • Go를 이용한 크로스 플랫폼
-  • 안드로이드 앱(단어앱) 기능 확장
-  • Python 유틸리티 자동화 도구
-```
 
 ---
 
