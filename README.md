@@ -45,7 +45,7 @@
 |---------|------|------|
 | [**sigup-android-source**](https://github.com/Transient-Onlooker/sigup-android-source.git) | 시급하다 - 학교 시간표 급식표 관리 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 | [**word-app-android-source**](https://github.com/Transient-Onlooker/word-app-android-source.git) | 단어앱 - 영어 단어 학습 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
-| [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | openflight4and - FocusFlight 를 벤치마킹하여 개발한 안드로이드 집중 타이머 앱입니다 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | openflight4and - FocusFlight 를 벤치마킹하여 개발한 안드로이드 집중 타이머 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
