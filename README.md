@@ -50,7 +50,6 @@
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 마크 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | [**newomr**](https://github.com/Transient-Onlooker/newomr.git) | [OMR(광학 마크 인식) 자동화 - 3모서리식](https://autoomr.mcv.kr) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기(Gemini) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) : TUI | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
@@ -78,6 +77,7 @@
 |---------|------|------|------|
 | [**chatgpt-vocab-generator-wails**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | 단어보붕 생성기(ChatGPT) : Wails를 이용한 GUI 개선안 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) | Wails를 이용할 경우 크로스 컴파일이 어려움 |
 | [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Python을 이용하면 크로스 컴파일이 어려움 |
+| [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 마크 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | Newomr 개발로 인해 더이상 필요없어짐 |
 
 ---
 ## 💡 관심 분야
