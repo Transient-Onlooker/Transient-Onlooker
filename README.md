@@ -1,8 +1,10 @@
 # 👋 Transient-Onlooker
 
 <div align="center">
+
+  <img width="1846" height="1034" alt="english_black" src="https://github.com/user-attachments/assets/e1341020-7916-41a0-bead-fe3ca6030ef8" />
   
-**고등학생 개발자 | 시스템 설계 & 역학 모델링**
+  **고등학생 개발자 | 시스템 설계 & 역학 모델링**
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Transient-Onlooker) • [🎯 Projects](#-주요-프로젝트)
 
