@@ -35,51 +35,46 @@
 
 ## 🎯 주요 프로젝트
 
-### 🦠 역학 모델링
+### 🔬 과학 & 시뮬레이션
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
 | [**sir-model-differential-equations**](https://github.com/Transient-Onlooker/sir-model-differential-equations.git) | 전염병 확산(SIR 미분방정식) - 고급 분석 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**sir-model-classic**](https://github.com/Transient-Onlooker/sir-model-classic.git) | 전염병 확산(고전 모델) - 기초 구현(GUI 기반) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
-### 📱 안드로이드 애플리케이션
+### 📱 모바일 앱
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**sigup-android-source**](https://github.com/Transient-Onlooker/sigup-android-source.git) | 시급하다 - 학교 시간표 급식표 관리 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 | [**word-app-android-source**](https://github.com/Transient-Onlooker/word-app-android-source.git) | 단어앱 - 영어 단어 학습 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
-| [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | openflight4and - FocusFlight 를 벤치마킹하여 개발한 안드로이드 집중 타이머 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | FocusFlight를 벤치마킹한 안드로이드 집중 타이머 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 
 ### 🤖 AI & 자동화
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
 | [**newomr**](https://github.com/Transient-Onlooker/newomr.git) | [OMR(광학 마크 인식) 자동화 - 3모서리식](https://autoomr.mcv.kr) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-| [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기(Gemini) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기(ChatGPT) : TUI | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 | [**HWPXport**](https://github.com/Transient-Onlooker/HWPXport.git) | 시험지를 HWP로 만들어주는 앱 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기 (Gemini / Python) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기 (ChatGPT / Go TUI) | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 
-### 🎵 유틸리티 & 생산성 도구
+### 💻 개발 & 인프라
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**music-box-score-converter**](https://github.com/Transient-Onlooker/music-box-score-converter.git) | 오르골 악보 변환기 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| [**golf-schedule-generator**](https://github.com/Transient-Onlooker/golf-schedule-generator.git) | 골프 일정 생성기 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**chat-application**](https://github.com/Transient-Onlooker/chat-application.git) | WebSocket 기반 실시간 채팅 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-
-### 📊 데이터 관리 시스템
-| 프로젝트 | 설명 | 언어 |
-|---------|------|------|
-| [**inventory-management-spreadsheet**](https://github.com/Transient-Onlooker/inventory-management-spreadsheet.git) | 재고관리 시스템 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| [**personnel-management-spreadsheet**](https://github.com/Transient-Onlooker/personnel-management-spreadsheet.git) | 인원관리 시스템(전 재고관리) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| [**se3cdocs**](https://github.com/Transient-Onlooker/se3cdocs) | 동아 공식 문서 사이트 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 
 ### 🕹️ 게임
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**kim-game**](https://github.com/Transient-Onlooker/kim-game) | RPG 게임(외주) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| [**kim-game**](https://github.com/Transient-Onlooker/kim-game) | RPG 게임 (외주) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+
 ---
-### ❌ 현재 종료된 프로젝트
+
+### ❌ 종료된 프로젝트
 | 프로젝트 | 설명 | 언어 | 종료 사유 |
 |---------|------|------|------|
-| [**chatgpt-vocab-generator-wails**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | 단어보붕 생성기(ChatGPT) : Wails를 이용한 GUI 개선안 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) | Wails를 이용할 경우 크로스 컴파일이 어려움 |
-| [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Python을 이용하면 크로스 컴파일이 어려움 |
-| [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 마크 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | Newomr 개발로 인해 더이상 필요없어짐 |
+| [**chatgpt-vocab-generator-wails**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | 단어보붕 생성기(ChatGPT) : Wails GUI 개선안 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) | Wails 크로스 컴파일 불가 |
+| [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Python 크로스 컴파일 불가 |
+| [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 마크 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |3모서리식 알고리즘 도입 후 newomr로 완전 대체 |
+
 
 ---
 ## 💡 관심 분야
