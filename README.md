@@ -59,8 +59,6 @@
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
 | [**chat-application**](https://github.com/Transient-Onlooker/chat-application.git) | WebSocket 기반 실시간 채팅 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| [**se3cdocs**](https://github.com/Transient-Onlooker/se3cdocs) | 동아 공식 문서 사이트 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-
 ### 🕹️ 게임
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
@@ -96,4 +94,4 @@
 - ❓ **질문이 있으신가요?** [Issues](https://github.com/Transient-Onlooker/Transient-Onlooker/issues)를 통해 연락해주세요!
 ---
 
-> **0.1%의 창의적 인간이 미래를 발명하고, 0.9%의 통찰력 있는 인간이 그것을 사업화하며, 99%의 잉여인간은 역사의 변화를 모른 채 따라갈 뿐이다. (제레미 라프킨)**
+> **0.1%의 창의적 인간이 미래를 발명하고, 0.9%의 통찰력 있는 인간이 그것을 사업화하며, 99%의 잉여인간은 역사의 변화를 모른 채 따라갈 뿐이다. (제레미 리프킨)**
