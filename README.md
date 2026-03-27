@@ -44,7 +44,7 @@
 ### 📱 모바일 앱
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
-| [**word-app-android-source**](https://github.com/Transient-Onlooker/word-app-android-source.git) | 단어앱 - 영어 단어 학습 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| [**WorldWord**](https://github.com/Transient-Onlooker/WorldWords) | WorldWords - 영어 단어 학습 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 | [**openflight4and**](https://github.com/Transient-Onlooker/openflight4and.git) | FocusFlight를 벤치마킹한 안드로이드 집중 타이머 앱 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 
 ### 🤖 AI & 자동화
