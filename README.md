@@ -40,6 +40,9 @@
 |---------|------|------|
 | [**sir-model-differential-equations**](https://github.com/Transient-Onlooker/sir-model-differential-equations.git) | 전염병 확산(SIR 미분방정식) - 고급 분석 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**sir-model-classic**](https://github.com/Transient-Onlooker/sir-model-classic.git) | 전염병 확산(고전 모델) - 기초 구현(GUI 기반) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| [**sir-model-diff-web**](https://github.com/Transient-Onlooker/sir-model-diff-web.git) | [전염병 확산(SIR 미분방정식) - 웹 기반](https://sir-model.mcv.kr/) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+
+
 
 ### 📱 모바일 앱
 | 프로젝트 | 설명 | 언어 |
