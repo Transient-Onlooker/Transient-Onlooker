@@ -8,9 +8,9 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Transient-Onlooker) • [🎯 Projects](#-주요-프로젝트)
 
-</div>
-
 [![Tokscale Stats](https://tokscale.ai/api/embed/Transient-Onlooker/svg?compact=1)](https://tokscale.ai/u/Transient-Onlooker)
+
+</div>
 
 ---
 
