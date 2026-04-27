@@ -57,8 +57,6 @@
 | [**sir-model-classic**](https://github.com/Transient-Onlooker/sir-model-classic.git) | 전염병 확산(고전 모델) - 기초 구현(GUI 기반) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**sir-model-diff-web**](https://github.com/Transient-Onlooker/sir-model-diff-web.git) | [전염병 확산(SIR 미분방정식) - 웹 기반](https://sir-model.mcv.kr/) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
-
-
 ### 📱 모바일 앱
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
@@ -69,7 +67,6 @@
 | 프로젝트 | 설명 | 언어 |
 |---------|------|------|
 | [**newomr**](https://github.com/Transient-Onlooker/newomr.git) | [OMR(광학 마크 인식) 자동화 - 3모서리식](https://autoomr.mcv.kr) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-| [**HWPXport**](https://github.com/Transient-Onlooker/HWPXport.git) | 시험지를 HWP로 만들어주는 앱 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | [**gemini-vocab-generator**](https://github.com/Transient-Onlooker/gemini-vocab-generator.git) | 단어보붕 생성기 (Gemini / Python) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | [**chatgpt-vocab-generator**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git) | 단어보붕 생성기 (ChatGPT / Go TUI) | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 
@@ -90,6 +87,7 @@
 | [**chatgpt-vocab-generator-wails**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | 단어보붕 생성기(ChatGPT) : Wails GUI 개선안 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) | Wails 크로스 컴파일 불가 |
 | [**chatgpt-vocab-generator-python**](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | 단어보붕 생성기(ChatGPT) | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Python 크로스 컴파일 불가 |
 | [**autoomr**](https://github.com/Transient-Onlooker/autoomr.git) | OMR(광학 마크 인식) 자동화 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |3모서리식 알고리즘 도입 후 newomr로 완전 대체 |
+| [**HWPXport**](https://github.com/Transient-Onlooker/HWPXport.git) | 시험지를 HWP로 만들어주는 앱 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |과도하게 복잡한 HWPX의 구조로 인해 포기 |
 
 
 ---
@@ -97,9 +95,7 @@
 
 - 🔬 **과학**: 3D 모델링, 시뮬레이션, 데이터 분석
 - 📱 **모바일**: 안드로이드 개발, 사용자 경험 설계
-- 🐍 **Python**: 자동화, GUI 개발, 머신러닝
-- 🦫 **Golang**: 자동화, TUI 개발
-- 💻 **시스템**: 웹소켓 통신, 데이터 구조, 알고리즘, AI 강화학습
+- 💻 **시스템**: 위성 통신, 데이터 구조, 알고리즘, AI 강화학습
 - 🚀 **항공우주**: 우주과학, 로켓 공학
 
 ---
