@@ -2,11 +2,24 @@
 
 <div align="center">
 
-  <img width="1846" height="1034" alt="english_black" src="https://github.com/user-attachments/assets/e1341020-7916-41a0-bead-fe3ca6030ef8" />
-  
-  **고등학생 개발자 | 시스템 설계 & 역학 모델링**
+<img width="100%" alt="english_black" src="https://github.com/user-attachments/assets/e1341020-7916-41a0-bead-fe3ca6030ef8" />
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Transient-Onlooker) • [🎯 Projects](#-주요-프로젝트)
+<br/>
+
+### 고등학생 개발자 | 시스템 설계 & 역학 모델링
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Transient-Onlooker)
+[![Projects](https://img.shields.io/badge/🎯%20Projects-111111?style=for-the-badge)](#-주요-프로젝트)
+![Codex](https://img.shields.io/badge/Codex-111111?style=for-the-badge&logo=openai&logoColor=white)
+![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+
+<br/><br/>
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Transient-Onlooker&theme=tokyo-night&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<br/>
 
 [![Tokscale Stats](https://tokscale.ai/api/embed/Transient-Onlooker/svg?compact=1)](https://tokscale.ai/u/Transient-Onlooker)
 
