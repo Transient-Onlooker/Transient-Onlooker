@@ -127,7 +127,34 @@ Telegram webhook으로 텍스트와 이미지 메모를 받고, SQLite에 저장
 
 ---
 
-### 4. [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all)
+### 4. [BlocksTL](https://github.com/Transient-Onlooker/BlocksTL)
+
+브라우저에서 STL 모델을 조립식 블록으로 분할하고, 3D 프린팅용 결합 핀과 실험적 스프링 소켓을 생성하는 로컬 전용 도구입니다.
+서버 업로드 없이 Web Worker와 Manifold WASM으로 메시 분할·Boolean 연산을 처리하고, 분할 미리보기부터 생성 결과 검증, STL/ZIP 내보내기까지 하나의 흐름으로 제공합니다.
+
+[Live Demo](https://transient-onlooker.github.io/BlocksTL/)
+
+**주요 특징**
+
+- Binary/ASCII STL 입력과 2~8개 Z축 블록 분할
+- 고정 mm 치수의 결합 핀·스프링 소켓, 19/20/21 맞춤 테스트 쿠폰 생성
+- Three.js 기반 절단 미리보기·생성 결과 QA·자유 회전 3D 점검
+- Web Worker 기반 비차단 처리와 Manifold WASM 기반 메시 Boolean 연산
+- 블록별 STL 및 전체 ZIP 다운로드, GitHub Actions 검증 후 Pages 자동 배포
+
+**Tech**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Three.js](https://img.shields.io/badge/Three.js-111111?style=flat-square&logo=threedotjs&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
+![Web Worker](https://img.shields.io/badge/Web%20Worker-111111?style=flat-square)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+---
+
+### 5. [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all)
 
 브라우저에서 실행되는 로켓 비행 시뮬레이터 프로젝트입니다.  
 추력, 연료 소모, 항력, 중력, 대기 밀도, 바람 등의 요소를 반영해 비행을 계산하고, 결과를 2D 차트와 3D 뷰로 함께 시각화했습니다.
@@ -155,7 +182,7 @@ Telegram webhook으로 텍스트와 이미지 메모를 받고, SQLite에 저장
 
 ---
 
-### 5. [newomr](https://github.com/Transient-Onlooker/newomr)
+### 6. [newomr](https://github.com/Transient-Onlooker/newomr)
 
 OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니다.  
 기존 OMR 프로젝트를 개선하여 3모서리식 인식 알고리즘을 도입한 버전입니다.
@@ -243,6 +270,8 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
+| [MinimalMP3](https://github.com/Transient-Onlooker/MinimalMP3) | LG V30을 음악 플레이어처럼 사용하기 위한 Android 홈 런처. 검은 화면과 앨범 아트 중심 UI에서 Spotify·Samsung Music 등 설치된 음악 앱의 MediaSession을 제어하고, 앱 서랍·런처 전환·재생 제어를 제공합니다. | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white) |
+| [arcacon-downloader](https://github.com/Transient-Onlooker/arcacon-downloader) | 아카콘 페이지 링크에서 상품 이미지를 수집하고 GIF로 변환하는 Python CLI. 브라우저 프로필 기반 로그인 유지, 병렬 수집, FPS·출력 폭·헤드리스 실행 옵션을 지원합니다. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white) ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white) |
 | [gichul-forge](https://github.com/Transient-Onlooker/gichul-forge) | 기출 PDF/ZIP을 업로드하면 OCR·비전·단원 태깅을 거쳐 단원별 문제 모음집 PDF를 생성하는 AI 기반 학습자료 자동화 웹서비스 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![NVIDIA NIM](https://img.shields.io/badge/NVIDIA%20NIM-76B900?style=flat-square&logo=nvidia&logoColor=white) |
 | [seoul3dmetromap](https://github.com/Transient-Onlooker/seoul3dmetromap) | 서울 지역을 격자로 나누고 각 위치에서 가장 가까운 지하철역까지의 거리를 2.5D 막대맵으로 시각화한 웹앱. 열린데이터 기반 좌표 처리와 정적 JSON 데이터 생성 흐름 구현 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 | [step-only-android](https://github.com/Transient-Onlooker/step-only-android) | 외부 통신 없이 기기 내 걸음 수 센서와 로컬 DB만 사용하는 오프라인 만보기 앱. Foreground Service와 센서 delta 누적 방식을 구현 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) ![Room](https://img.shields.io/badge/Room-3DDC84?style=flat-square&logo=android&logoColor=white) |
