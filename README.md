@@ -26,7 +26,7 @@ Kotlin, TypeScript, Python을 중심으로
 항공우주공학과 시스템 설계에 관심이 많은 개발자입니다.
 
 수학·과학 모델을 코드로 구현하고, 실제로 사용할 수 있는 앱과 자동화 도구로 확장하는 데 집중하고 있습니다.  
-안드로이드 앱 개발, 전염병 확산 모델링, OMR 자동화, AI 기반 개인 에이전트와 학습자료 자동화 도구 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다.
+안드로이드 앱 개발, 전염병 확산 모델링, OMR 자동화, 3D 제작 도구, 개인 Capture & Workspace, AI 기반 노트 에이전트와 학습자료 자동화 도구 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다.
 
 ---
 
@@ -61,12 +61,14 @@ FocusFlight를 벤치마킹하여, 사용자가 집중 시간을 관리하고 �
 
 ---
 
-### 2. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web)
+### 2. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
 
 Telegram으로 빠르게 기록하고 Web에서 정리하는 개인용 Capture & Workspace입니다.<br/>
 Telegram webhook과 Web Quick Capture로 입력을 받고, Cloudflare D1에 원문과 관리 항목을 분리해 안전하게 저장합니다.
 
-AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inbox와 Todo부터 Projects, Purchase, Print Queue까지 하나의 Workspace에서 관리하도록 설계했습니다. 삭제·복원, 편집 실패 시 draft 복원, Undo 등 일상적인 관리 작업을 안전하게 처리합니다.
+[tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)은 이 흐름을 앞서 검증한 FastAPI·SQLite·NVIDIA NIM 기반 개인 메모 에이전트 프로토타입으로 남아 있습니다. 명령어 기반 기록·검색과 기존 메모 수정·삭제 전 미리보기·승인 절차를 구현했습니다.
+
+NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inbox와 Todo부터 Projects, Purchase, Print Queue까지 하나의 Workspace에서 관리하도록 설계했습니다. 삭제·복원, 편집 실패 시 draft 복원, Undo 등 일상적인 관리 작업을 안전하게 처리합니다.
 
 **주요 특징**
 
@@ -232,6 +234,9 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 ![Google Maps SDK](https://img.shields.io/badge/Google%20Maps%20SDK-4285F4?style=flat-square&logo=googlemaps&logoColor=white)
 ![Google Maps 3D SDK](https://img.shields.io/badge/Google%20Maps%20SDK-4285F4?style=flat-square&logo=googlemaps&logoColor=white)
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflareworkers&logoColor=white)
+![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=flat-square&logoColor=white)
 ![AdMob](https://img.shields.io/badge/AdMob-EA4335?style=flat-square&logo=googleadmob&logoColor=white)
 ![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white)
