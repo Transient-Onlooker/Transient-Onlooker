@@ -61,33 +61,33 @@ FocusFlight를 벤치마킹하여, 사용자가 집중 시간을 관리하고 �
 
 ---
 
-### 2. [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
+### 2. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web)
 
-Telegram을 입력 인터페이스로 사용하는 개인 메모 에이전트입니다.  
-Telegram webhook으로 텍스트와 이미지 메모를 받고, SQLite에 저장한 뒤 NVIDIA NIM 기반 AI 라우팅과 OCR/요약 흐름으로 확장하는 구조입니다.
+Telegram으로 빠르게 기록하고 Web에서 정리하는 개인용 Capture & Workspace입니다.<br/>
+Telegram webhook과 Web Quick Capture로 입력을 받고, Cloudflare D1에 원문과 관리 항목을 분리해 안전하게 저장합니다.
 
-슬래시 명령어 기반 프로토타입에서 시작해, 장기적으로는 자연어 요청을 내부 명령 객체로 변환하는 노트 관리 에이전트를 목표로 설계했습니다. 기존 메모 수정·삭제처럼 위험한 작업은 미리보기와 승인 단계를 거치도록 안전 흐름을 두었습니다.
+AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inbox와 Todo부터 Projects, Purchase, Print Queue까지 하나의 Workspace에서 관리하도록 설계했습니다. 삭제·복원, 편집 실패 시 draft 복원, Undo 등 일상적인 관리 작업을 안전하게 처리합니다.
 
 **주요 특징**
 
-- FastAPI 기반 Telegram webhook 서버
-- SQLite 기반 메시지, 노트, 이미지, 대화 상태, 수정 이력 저장 구조
-- `/new`, `/add`, `/list`, `/show`, `/raw`, `/fix`, `/delete`, `/dedupe` 등 명령어 프로토타입 구현
-- Deterministic command gate와 NVIDIA NIM 기반 AI 라우팅 결합
-- 이미지 아카이브, OCR 보정, 요약 메타데이터 생성 흐름 구현
-- 기존 메모 수정·삭제 전 미리보기 및 승인 절차 적용
-- Notion 선택 동기화와 Docker / pytest 기반 개발 흐름 구성
+- Telegram webhook과 Web Quick Capture 기반 기록 수집
+- Cloudflare D1의 `captures`, `items`, `projects` 기반 원문 보존·관리 구조
+- Inbox, Todo, Today, Notes, Projects, Purchase, Print Queue, Archive, Trash Workspace
+- 항목 분류·수정·soft delete·복원과 optimistic UI, Undo 흐름 구현
+- 명시적 `/print` 명령어로 3D 출력 작업의 대기열·상태·순서 관리
+- Durable Object + WebSocket 이벤트 수신과 TanStack Query 기반 실시간 최신화
+- GitHub Pages Web 배포와 Cloudflare Worker API 배포 흐름 구성
 
 **Tech**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-![NVIDIA NIM](https://img.shields.io/badge/NVIDIA%20NIM-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflareworkers&logoColor=white)
+![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=flat-square&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ---
 
