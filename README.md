@@ -6,9 +6,9 @@
 
 <br/>
 
-### 시스템 설계 · 역학 모델링 · 앱 개발
+### 시스템 설계 · 과학 모델링 · 웹 도구 개발
 
-Kotlin, TypeScript, Python을 중심으로  
+TypeScript, Python, Kotlin을 중심으로  
 과학 모델링과 실사용 도구를 만드는 개발자입니다.
 
 <br/>
@@ -26,38 +26,39 @@ Kotlin, TypeScript, Python을 중심으로
 항공우주공학과 시스템 설계에 관심이 많은 개발자입니다.
 
 수학·과학 모델을 코드로 구현하고, 실제로 사용할 수 있는 앱과 자동화 도구로 확장하는 데 집중하고 있습니다.  
-안드로이드 앱 개발, 전염병 확산 모델링, OMR 자동화, 3D 제작 도구, 개인 Capture & Workspace, AI 기반 노트 에이전트와 학습자료 자동화 도구 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다.
+학습 기록·통계 웹서비스, 전염병 확산 및 로켓 비행 시뮬레이션, OMR 자동화, 3D 제작 도구, 개인 Capture & Workspace, AI 개발 도구 기여, 안드로이드 앱 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다.
 
 ---
 
 ## 🎯 대표 프로젝트
 
-### 1. [openflight4and](https://github.com/Transient-Onlooker/openflight4and)
+### 1. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
 
-안드로이드 기반 집중 타이머 앱입니다.  
-FocusFlight를 벤치마킹하여, 사용자가 집중 시간을 관리하고 몰입을 유지할 수 있도록 설계했습니다.
+열품타의 공부 타이머와 학습 기록을 PC·모바일 브라우저에서도 이용할 수 있도록 만든 비공식 웹 클라이언트입니다.  
+React 기반 화면을 GitHub Pages에서 제공하고, Cloudflare Workers와 D1으로 API 중계·세션 관리·기록 캐시를 구현했습니다.
 
-최근에는 Firebase 계정 연동, Google Sign-In, Google Maps / Maps 3D SDK, AdMob 보상형 광고, CI 빌드 파이프라인 등을 통합하며 실제 앱 서비스에 가까운 구조로 확장하고 있습니다.
+일반 타이머와 뽀모도로, 오늘의 계획, 과목별 기록, 그룹 현황을 한곳에서 관리하며, 최근 7·14·30일 학습 통계를 막대그래프·달력으로 확인할 수 있습니다.
+
+[Live Demo](https://ypt.mcv.kr/)
 
 **주요 특징**
 
-- Kotlin + Jetpack Compose 기반 안드로이드 앱
-- Firebase Auth 기반 계정 연동
-- Google Sign-In 통합
-- Google Maps SDK / Maps 3D SDK 연동
-- AdMob rewarded ad 통합
-- Room, DataStore, Kotlin Serialization 기반 로컬 데이터 관리
-- GitHub Actions 기반 CI 빌드 흐름 구성
+- React + TypeScript + Vite 기반 반응형 웹 클라이언트
+- 열품타 이메일 로그인 및 Google 로그인 지원
+- Cloudflare Workers API 중계와 D1 기반 암호화 세션·타이머 상태 관리
+- 일반 타이머·뽀모도로, 할 일·목표 설정 및 그룹 멤버 현황
+- 날짜·과목별 기록과 7·14·30일 통계, CSV 내보내기
+- D1 캐시와 선택적 강제 새로고침으로 조회 비용·지연 관리
+- 라이트/OLED 다크 테마 및 WCAG 2.2 AA 대비 회귀 검사
 
 **Tech**
 
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflareworkers&logoColor=white)
 ![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle%20KTS-02303A?style=flat-square&logo=gradle&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ---
 
@@ -215,9 +216,9 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 
 ### Main Languages
 
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 
 ### Frontend / App
 
@@ -275,9 +276,11 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
+| [tokscale (기여 포크)](https://github.com/Transient-Onlooker/tokscale) | 여러 AI 코딩 에이전트의 토큰·비용을 분석하는 [Tokscale 원본 프로젝트](https://github.com/junhoyeo/tokscale)의 포크. OpenCodex combo 요청을 실제 처리 모델에 연결하는 Codex 사용량 귀속 로직을 구현해 [upstream PR #1400](https://github.com/junhoyeo/tokscale/pull/1400)으로 제안했습니다(검토 중). | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![CLI](https://img.shields.io/badge/CLI-111111?style=flat-square&logo=gnubash&logoColor=white) |
+| [TRINITY-OS (기여 포크)](https://github.com/Transient-Onlooker/TRINITY-OS) | [TRINITY-OS 원본](https://github.com/itsmekk-mario/TRINITY-OS)을 바탕으로 학습 기록에 수식과 함수 그래프를 작성·저장·재표시하는 패치를 작업한 포크. 기존 데이터 스키마를 유지하며 자체 수식 파서를 사용합니다. | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Math](https://img.shields.io/badge/Math-Rendering-555555?style=flat-square) |
+| [openflight4and](https://github.com/Transient-Onlooker/openflight4and) | 집중 시간을 관리하는 Android 앱. Kotlin·Jetpack Compose 기반으로 Firebase Auth, Google Sign-In, Google Maps/Maps 3D SDK, 보상형 광고, 로컬 데이터 저장 및 CI 빌드를 통합했습니다. | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white) |
 | [MinimalMP3](https://github.com/Transient-Onlooker/MinimalMP3) | LG V30을 음악 플레이어처럼 사용하기 위한 Android 홈 런처. 검은 화면과 앨범 아트 중심 UI에서 Spotify·Samsung Music 등 설치된 음악 앱의 MediaSession을 제어하고, 앱 서랍·런처 전환·재생 제어를 제공합니다. | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white) |
 | [arcacon-downloader](https://github.com/Transient-Onlooker/arcacon-downloader) | 아카콘 페이지 링크에서 상품 이미지를 수집하고 GIF로 변환하는 Python CLI. 브라우저 프로필 기반 로그인 유지, 병렬 수집, FPS·출력 폭·헤드리스 실행 옵션을 지원합니다. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white) ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white) |
-| [gichul-forge](https://github.com/Transient-Onlooker/gichul-forge) | 기출 PDF/ZIP을 업로드하면 OCR·비전·단원 태깅을 거쳐 단원별 문제 모음집 PDF를 생성하는 AI 기반 학습자료 자동화 웹서비스 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![NVIDIA NIM](https://img.shields.io/badge/NVIDIA%20NIM-76B900?style=flat-square&logo=nvidia&logoColor=white) |
 | [seoul3dmetromap](https://github.com/Transient-Onlooker/seoul3dmetromap) | 서울 지역을 격자로 나누고 각 위치에서 가장 가까운 지하철역까지의 거리를 2.5D 막대맵으로 시각화한 웹앱. 열린데이터 기반 좌표 처리와 정적 JSON 데이터 생성 흐름 구현 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 | [step-only-android](https://github.com/Transient-Onlooker/step-only-android) | 외부 통신 없이 기기 내 걸음 수 센서와 로컬 DB만 사용하는 오프라인 만보기 앱. Foreground Service와 센서 delta 누적 방식을 구현 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) ![Room](https://img.shields.io/badge/Room-3DDC84?style=flat-square&logo=android&logoColor=white) |
 | Vocab Generator Series | AI 기반 영어 단어장 생성기 시리즈. [gemini-vocab-generator](https://github.com/Transient-Onlooker/gemini-vocab-generator.git)와 [chatgpt-vocab-generator](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git)로 Gemini API 기반 Python GUI, OpenAI API 기반 Go TUI 흐름을 실험 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-FFD43B?style=flat-square&logo=python&logoColor=black) ![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
@@ -331,7 +334,7 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 
 ## 💡 관심 분야
 
-항공우주공학 · 수치 시뮬레이션 · 안드로이드 개발 · 시스템 설계 · 위성 통신 · AI 자동화
+항공우주공학 · 수치 시뮬레이션 · 웹 서비스 개발 · 시스템 설계 · AI 개발 도구 · 자동화
 
 ---
 
