@@ -34,21 +34,21 @@ TypeScript, Python, Kotlin을 중심으로
 
 ### 1. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
 
-열품타의 공부 타이머와 학습 기록을 PC·모바일 브라우저에서도 이용할 수 있도록 만든 비공식 웹 클라이언트입니다.  
-React 기반 화면을 GitHub Pages에서 제공하고, Cloudflare Workers와 D1으로 API 중계·세션 관리·기록 캐시를 구현했습니다.
+열품타의 공부 타이머·기록·그룹을 PC와 모바일 웹에서 다루는 비공식 클라이언트입니다.  
+React 프론트엔드와 Cloudflare Workers API를 분리하고, D1을 이용해 인증 세션·타이머 상태·조회 캐시를 관리합니다.
 
-일반 타이머와 뽀모도로, 오늘의 계획, 과목별 기록, 그룹 현황을 한곳에서 관리하며, 최근 7·14·30일 학습 통계를 막대그래프·달력으로 확인할 수 있습니다.
+완료 기록과 실행 중 예상 시간을 구분하고, 중복 요청·응답 실패 후 상태 복구를 고려해 설계했습니다. 7·14·30일 학습 통계와 뽀모도로·계획 기능도 제공합니다.
 
 [Live Demo](https://ypt.mcv.kr/)
 
 **주요 특징**
 
 - React + TypeScript + Vite 기반 반응형 웹 클라이언트
-- 열품타 이메일 로그인 및 Google 로그인 지원
-- Cloudflare Workers API 중계와 D1 기반 암호화 세션·타이머 상태 관리
-- 일반 타이머·뽀모도로, 할 일·목표 설정 및 그룹 멤버 현황
+- Cloudflare Workers API 중계와 D1 기반 인증 세션·타이머 상태 관리
+- 타이머 상태 재확인, 중복 요청 제어와 불확실한 결과의 안전한 처리
+- 일반 타이머·뽀모도로, 하루 계획 및 그룹 멤버 상태 동기화
 - 날짜·과목별 기록과 7·14·30일 통계, CSV 내보내기
-- D1 캐시와 선택적 강제 새로고침으로 조회 비용·지연 관리
+- D1 캐시·강제 새로고침, 미확인 기록과 실제 0시간 구분
 - 라이트/OLED 다크 테마 및 WCAG 2.2 AA 대비 회귀 검사
 
 **Tech**
@@ -64,20 +64,20 @@ React 기반 화면을 GitHub Pages에서 제공하고, Cloudflare Workers와 D1
 
 ### 2. [openflight4and](https://github.com/Transient-Onlooker/openflight4and)
 
-안드로이드 기반 집중 타이머 앱입니다.  
-FocusFlight를 벤치마킹하여, 사용자가 집중 시간을 관리하고 몰입을 유지할 수 있도록 설계했습니다.
+출발지·목적지와 예상 비행시간을 선택해 가상 비행을 진행하는 Android 집중 앱입니다.  
+단순 카운트다운 대신 **공항 선택 → 좌석·보딩패스 → 지도 기반 비행 → 도착 기록**으로 이어지는 경험을 구현했습니다.
 
-최근에는 Firebase 계정 연동, Google Sign-In, Google Maps / Maps 3D SDK, AdMob 보상형 광고, CI 빌드 파이프라인 등을 통합하며 실제 앱 서비스에 가까운 구조로 확장하고 있습니다.
+Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 3D, 비행권·보상 시스템과 집중 잠금을 결합했습니다.
 
 **주요 특징**
 
-- Kotlin + Jetpack Compose 기반 안드로이드 앱
-- Firebase Auth 기반 계정 연동
-- Google Sign-In 통합
-- Google Maps SDK / Maps 3D SDK 연동
-- AdMob rewarded ad 통합
-- Room, DataStore, Kotlin Serialization 기반 로컬 데이터 관리
-- GitHub Actions 기반 CI 빌드 흐름 구성
+- Kotlin + Jetpack Compose 기반 Android 네이티브 앱
+- 대권 거리 기반 예상 비행시간과 2D·2.5D·3D 지도 표시
+- 좌석 선택·보딩패스·비행권·출석 및 광고 보상 흐름
+- 사용 정보 접근·오버레이 기반 단계별 집중 잠금
+- Firebase Auth, Google Sign-In 및 Cloudflare Worker/D1 연동
+- Room·DataStore 기반 로컬 상태 관리
+- GitHub Actions 기반 CI 빌드 흐름
 
 **Tech**
 
@@ -94,11 +94,11 @@ FocusFlight를 벤치마킹하여, 사용자가 집중 시간을 관리하고 �
 ### 3. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
 
 Telegram으로 빠르게 기록하고 Web에서 정리하는 개인용 Capture & Workspace입니다.<br/>
-Telegram webhook과 Web Quick Capture로 입력을 받고, Cloudflare D1에 원문과 관리 항목을 분리해 안전하게 저장합니다.
+Cloudflare D1에서 **입력 원문(`captures`)과 수정 가능한 항목(`items`)을 분리**해 기록을 보존합니다.
 
-[tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)은 이 흐름을 앞서 검증한 FastAPI·SQLite·NVIDIA NIM 기반 개인 메모 에이전트 프로토타입으로 남아 있습니다. 명령어 기반 기록·검색과 기존 메모 수정·삭제 전 미리보기·승인 절차를 구현했습니다.
+Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, WebSocket 변경 알림과 재조회로 화면을 최신화합니다. 삭제 복원·Undo·편집 실패 시 draft 복원으로 작업 안정성을 높였습니다.
 
-NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inbox와 Todo부터 Projects, Purchase, Print Queue까지 하나의 Workspace에서 관리하도록 설계했습니다. 삭제·복원, 편집 실패 시 draft 복원, Undo 등 일상적인 관리 작업을 안전하게 처리합니다.
+[tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)은 별도의 FastAPI·SQLite·NVIDIA NIM 기반 초기 실험으로, 명령어 기반 기록과 수정·삭제 전 승인 흐름을 검증한 프로토타입입니다.
 
 **주요 특징**
 
@@ -125,28 +125,28 @@ NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inb
 
 ### 4. SIR Model Series
 
-전염병 확산을 수학적 모델로 분석하고 시각화한 프로젝트 시리즈입니다.  
-고전 SIR 모델부터 미분방정식 기반 모델, 웹 기반 SEIRS 시뮬레이터까지 확장했습니다.
+전염병 확산을 서로 다른 수학적 방법으로 구현한 탐구 프로젝트 시리즈입니다.  
+**2차원 격자 기반 확률적 개체 모델 → SciPy 연립미분방정식 기반 모델 → TypeScript/RK4 웹 시뮬레이터**로 접근법을 발전시켰습니다.
 
 **Repositories**
 
 - [sir-model-classic](https://github.com/Transient-Onlooker/sir-model-classic.git)  
-  고전 SIR 모델을 GUI 기반으로 구현한 기초 시뮬레이터
+  S/I/R/V/Q/D 상태를 격자에 배치하고 확산·이동·방역 이벤트를 처리하는 Python 시뮬레이터
 
 - [sir-model-differential-equations](https://github.com/Transient-Onlooker/sir-model-differential-equations.git)  
-  SIR / SEIRS 미분방정식 기반 감염 확산 분석 프로젝트
+  SciPy solve_ivp를 사용한 기본 SIR 및 확장 SEIRS 계열 GUI 시뮬레이터
 
 - [sir-model-diff-web](https://github.com/Transient-Onlooker/sir-model-diff-web.git)  
-  TypeScript + Vite 기반 웹 시뮬레이터  
+  TypeScript + Vite 기반 RK4 구획 모델 웹 시뮬레이터  
   [Demo](https://sir-model.mcv.kr/)
 
 **주요 특징**
 
-- SIR / SEIRS 감염병 확산 모델 구현
-- 미분방정식 기반 수치 시뮬레이션
-- 파라미터 변화에 따른 감염 곡선 분석
-- Python GUI 버전과 TypeScript 웹 버전으로 확장
-- NumPy, Matplotlib, SciPy 기반 분석 흐름 구현
+- NumPy 격자 기반 SIRVQ-D 확산과 이동·격리·정책 이벤트 시뮬레이션
+- SciPy solve_ivp 기반 SIR/SEIRS 구획 모델 및 Python GUI
+- TypeScript 웹 버전의 RK4 기반 수치 적분
+- 변이·개입·백신 및 면역 파라미터 변경에 따른 결과 시각화
+- 학습·탐구용 가정 모델로 실제 감염 규모 예측과 구분
 
 **Tech**
 
@@ -169,8 +169,8 @@ NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inb
 **주요 특징**
 
 - Binary/ASCII STL 입력과 2~8개 Z축 블록 분할
-- 고정 mm 치수의 결합 핀·스프링 소켓, 19/20/21 맞춤 테스트 쿠폰 생성
-- Three.js 기반 절단 미리보기·생성 결과 QA·자유 회전 3D 점검
+- 고정 mm 치수의 결합 핀·실험적 스프링 소켓 및 19/20/21 맞춤 테스트 쿠폰 생성
+- 다중 절단면 connector footprint 검증과 Three.js 기반 결과 QA·3D 점검
 - Web Worker 기반 비차단 처리와 Manifold WASM 기반 메시 Boolean 연산
 - 블록별 STL 및 전체 ZIP 다운로드, GitHub Actions 검증 후 Pages 자동 배포
 
@@ -191,7 +191,7 @@ NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inb
 브라우저에서 실행되는 로켓 비행 시뮬레이터 프로젝트입니다.  
 추력, 연료 소모, 항력, 중력, 대기 밀도, 바람 등의 요소를 반영해 비행을 계산하고, 결과를 2D 차트와 3D 뷰로 함께 시각화했습니다.
 
-단순 그래프 출력이 아니라, RK4 기반 수치 적분, 이벤트 추출, 재생 시점 동기화, 인터랙티브 3D 리플레이까지 포함한 시뮬레이션 프론트엔드로 확장했습니다.
+RK4 기반 수치 적분과 비행 이벤트 추출, 동기화된 2D/3D 재생에 더해 **미션 평가·비행 제약 검증·불확실성 분석·시나리오 비교**를 제공하는 교육용 비행 분석 도구로 구성했습니다.
 
 **주요 특징**
 
@@ -199,7 +199,7 @@ NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inb
 - 추력, 연료 질량, 항력, 중력, 풍속 반영
 - 2D 궤적 차트 + 텔레메트리 차트 + 3D 비행 뷰 동시 제공
 - 재생 시점과 2D/3D 뷰 동기화
-- 프리셋 기반 시나리오 비교 및 GitHub Pages 배포 구성
+- 미션 분석·비행 검증 게이트·불확실성 분석·시나리오 비교와 GitHub Pages 배포 구성
 
 **Tech**
 
@@ -216,19 +216,19 @@ NoteRelay는 AI 의존 없이 핵심 기록·분류 흐름을 완성한 뒤, Inb
 
 ### 7. [newomr](https://github.com/Transient-Onlooker/newomr)
 
-OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니다.  
-기존 OMR 프로젝트를 개선하여 3모서리식 인식 알고리즘을 도입한 버전입니다.
+OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채점 웹앱입니다.  
+기존 `autoomr`를 개선해 **3개 기준 마커(TL·TR·BR)에 따른 회전·크기 정렬**과 Canvas 기반 버블 판독을 구현했습니다.
 
 [Demo](https://autoomr.mcv.kr)
 
 **주요 특징**
 
 - React + TypeScript 기반 OMR 채점 웹앱
-- 3모서리식 인식 알고리즘 도입
-- 그리드 확대경 모드 구현
-- 일괄 수정 및 선택 그룹 답안 편집 기능
-- 기존 `autoomr` 프로젝트를 대체하는 개선 버전
-- GitHub Pages 기반 배포 흐름 구성
+- 4개 모서리 영역에서 BFS로 마커 후보 탐색·노이즈 필터링
+- TL·TR·BR 기준 회전·축별 크기 정렬 (Homography와 구분)
+- Canvas 이진화·버블 내부의 검은 픽셀 비율로 답안 판정
+- 그리드 매핑·답안 편집·디버그 화면 제공
+- 기존 `autoomr` 이후 버전과 GitHub Pages 배포 구성
 
 **Tech**
 
@@ -236,8 +236,6 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-
----
 
 ---
 
@@ -313,7 +311,7 @@ OMR, 즉 광학 마크 인식을 자동화하는 웹 기반 프로젝트입니�
 | [step-only-android](https://github.com/Transient-Onlooker/step-only-android) | 외부 통신 없이 기기 내 걸음 수 센서와 로컬 DB만 사용하는 오프라인 만보기 앱. Foreground Service와 센서 delta 누적 방식을 구현 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) ![Room](https://img.shields.io/badge/Room-3DDC84?style=flat-square&logo=android&logoColor=white) |
 | Vocab Generator Series | AI 기반 영어 단어장 생성기 시리즈. [gemini-vocab-generator](https://github.com/Transient-Onlooker/gemini-vocab-generator.git)와 [chatgpt-vocab-generator](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git)로 Gemini API 기반 Python GUI, OpenAI API 기반 Go TUI 흐름을 실험 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-FFD43B?style=flat-square&logo=python&logoColor=black) ![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
 | [WorldWords](https://github.com/Transient-Onlooker/WorldWords) | 영어 단어 학습을 위한 Kotlin 기반 안드로이드 앱. Jetpack Compose 계열 구조와 모바일 학습 UI/UX를 실험 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) |
-| [se3cdocs](https://github.com/Transient-Onlooker/se3cdocs) | SE3C 동아리 공식 문서 포털. Markdown 기반 문서를 React로 렌더링하고 커스텀 도메인으로 배포한 문서화 웹사이트 | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) |
+| [se3cdocs](https://github.com/SE3C/se3cdocs) | SE3C 동아리 공식 문서 포털. Markdown 기반 문서를 React로 렌더링하고 커스텀 도메인으로 배포한 문서화 웹사이트 | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) |
 | [openjacks](https://github.com/Transient-Onlooker/openjacks) | React + Express 기반 웹앱. API 서버 연동 구조와 배포 설정을 포함한 웹 프로젝트 | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) |
 | [chat-application](https://github.com/Transient-Onlooker/chat-application) | WebSocket 기반 실시간 채팅 서버/클라이언트 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=flat-square&logoColor=white) |
 | [golf-schedule-generator](https://github.com/Transient-Onlooker/golf-schedule-generator) | JSON 입력 기반 골프 대회 일정 자동 생성 GUI 툴 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-FFD43B?style=flat-square&logo=python&logoColor=black) |
