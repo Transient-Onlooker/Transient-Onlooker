@@ -130,13 +130,13 @@ Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, W
 
 **Repositories**
 
-- [sir-model-classic](https://github.com/Transient-Onlooker/sir-model-classic.git)  
+- [sir-model-classic](https://github.com/Transient-Onlooker/sir-model-classic)  
   S/I/R/V/Q/D 상태를 격자에 배치하고 확산·이동·방역 이벤트를 처리하는 Python 시뮬레이터
 
-- [sir-model-differential-equations](https://github.com/Transient-Onlooker/sir-model-differential-equations.git)  
+- [sir-model-differential-equations](https://github.com/Transient-Onlooker/sir-model-differential-equations)  
   SciPy solve_ivp를 사용한 기본 SIR 및 확장 SEIRS 계열 GUI 시뮬레이터
 
-- [sir-model-diff-web](https://github.com/Transient-Onlooker/sir-model-diff-web.git)  
+- [sir-model-diff-web](https://github.com/Transient-Onlooker/sir-model-diff-web)  
   TypeScript + Vite 기반 RK4 구획 모델 웹 시뮬레이터  
   [Demo](https://sir-model.mcv.kr/)
 
