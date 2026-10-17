@@ -8,7 +8,7 @@
 
 ### 시스템 설계 · 과학 모델링 · 웹 도구 개발
 
-TypeScript, Python, Kotlin을 중심으로  
+TypeScript, Python, Kotlin을 중심으로 Rust도 활용하며,  
 과학 모델링과 실사용 도구를 만드는 개발자입니다.
 
 <br/>
@@ -26,7 +26,7 @@ TypeScript, Python, Kotlin을 중심으로
 항공우주공학과 시스템 설계에 관심이 많은 개발자입니다.
 
 수학·과학 모델을 코드로 구현하고, 실제로 사용할 수 있는 앱과 자동화 도구로 확장하는 데 집중하고 있습니다.  
-학습 기록·통계 웹서비스, 전염병 확산 및 로켓 비행 시뮬레이션, OMR 자동화, 3D 제작 도구, 개인 Capture & Workspace, AI 개발 도구 기여, 안드로이드 앱 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다.
+학습 기록·통계 웹서비스, 전염병 확산 및 로켓 비행 시뮬레이션, OMR 자동화, 3D 제작 도구, 개인 Capture & Workspace, AI 개발 도구 기여, 안드로이드 앱 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다. 최근에는 Bluetooth LE/HID 장치의 동작을 분석하며 Windows 네이티브 입력 지원 가능성을 탐구하고 있습니다.
 
 ---
 
@@ -239,6 +239,31 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 
 ---
 
+### 8. [siri-remote-for-windows](https://github.com/Transient-Onlooker/siri-remote-for-windows)
+
+Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리모컨으로 활용하기 위한 **BLE/HID 리버스 엔지니어링 및 Windows 포팅 실험**입니다.  
+기존 [siri-remote](https://github.com/azais-corentin/siri-remote)를 포크해 Linux/BlueZ 실기기 입력 수신 결과를 정리하고, Windows에서 장치 인식·GATT·HID 드라이버 바인딩을 읽기 전용으로 진단합니다.
+
+**현재 상태:** Linux 환경에서 버튼·터치 이벤트 수신을 확인했습니다. Windows에서도 BLE 연결과 HID 서비스(0x1812) 검색은 성공했지만, HID 특성 접근 제한과 장치 드라이버 Code 10 문제를 조사 중입니다. **Windows 네이티브 입력 제어 기능은 아직 구현·검증되지 않았습니다.**
+
+**주요 특징**
+
+- WSL2/BlueZ에서 A2854 버튼·터치·호버 이벤트 분석
+- Windows WinRT 기반 BLE/GATT 서비스 검색과 접근 상태 진단
+- HID 인터페이스·PnP 관계·Kernel-PnP 오류의 읽기 전용 진단 도구
+- 재현 가능한 실험 결과, Windows 포팅 계획, 오프라인 fixture 테스트 정리
+- 원본 프로젝트의 GPL-3.0 라이선스와 출처 유지
+
+**Tech**
+
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Bluetooth LE](https://img.shields.io/badge/Bluetooth%20LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
+![HID](https://img.shields.io/badge/HID-Diagnostics-555555?style=flat-square)
+
+---
+
 ## 🛠️ Tech Stack & Tools
 
 ### Main Languages
@@ -246,6 +271,7 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
 ### Frontend / App
 
@@ -306,18 +332,12 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 | [tokscale (기여 포크)](https://github.com/Transient-Onlooker/tokscale) | 여러 AI 코딩 에이전트의 토큰·비용을 분석하는 [Tokscale 원본 프로젝트](https://github.com/junhoyeo/tokscale)의 포크. OpenCodex combo 요청을 실제 처리 모델에 연결하는 Codex 사용량 귀속 로직을 구현해 [upstream PR #1400](https://github.com/junhoyeo/tokscale/pull/1400)으로 제안했습니다(검토 중). | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![CLI](https://img.shields.io/badge/CLI-111111?style=flat-square&logo=gnubash&logoColor=white) |
 | [TRINITY-OS (기여 포크)](https://github.com/Transient-Onlooker/TRINITY-OS) | [TRINITY-OS 원본](https://github.com/itsmekk-mario/TRINITY-OS)을 바탕으로 학습 기록에 수식과 함수 그래프를 작성·저장·재표시하는 패치를 작업한 포크. 기존 데이터 스키마를 유지하며 자체 수식 파서를 사용합니다. | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Math](https://img.shields.io/badge/Math-Rendering-555555?style=flat-square) |
 | [MinimalMP3](https://github.com/Transient-Onlooker/MinimalMP3) | LG V30을 음악 플레이어처럼 사용하기 위한 Android 홈 런처. 검은 화면과 앨범 아트 중심 UI에서 Spotify·Samsung Music 등 설치된 음악 앱의 MediaSession을 제어하고, 앱 서랍·런처 전환·재생 제어를 제공합니다. | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white) |
-| [arcacon-downloader](https://github.com/Transient-Onlooker/arcacon-downloader) | 아카콘 페이지 링크에서 상품 이미지를 수집하고 GIF로 변환하는 Python CLI. 브라우저 프로필 기반 로그인 유지, 병렬 수집, FPS·출력 폭·헤드리스 실행 옵션을 지원합니다. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white) ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white) |
-| [seoul3dmetromap](https://github.com/Transient-Onlooker/seoul3dmetromap) | 서울 지역을 격자로 나누고 각 위치에서 가장 가까운 지하철역까지의 거리를 2.5D 막대맵으로 시각화한 웹앱. 열린데이터 기반 좌표 처리와 정적 JSON 데이터 생성 흐름 구현 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
 | [step-only-android](https://github.com/Transient-Onlooker/step-only-android) | 외부 통신 없이 기기 내 걸음 수 센서와 로컬 DB만 사용하는 오프라인 만보기 앱. Foreground Service와 센서 delta 누적 방식을 구현 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) ![Room](https://img.shields.io/badge/Room-3DDC84?style=flat-square&logo=android&logoColor=white) |
-| Vocab Generator Series | AI 기반 영어 단어장 생성기 시리즈. [gemini-vocab-generator](https://github.com/Transient-Onlooker/gemini-vocab-generator.git)와 [chatgpt-vocab-generator](https://github.com/Transient-Onlooker/chatgpt-vocab-generator.git)로 Gemini API 기반 Python GUI, OpenAI API 기반 Go TUI 흐름을 실험 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-FFD43B?style=flat-square&logo=python&logoColor=black) ![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI%20API-412991?style=flat-square&logo=openai&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) |
-| [WorldWords](https://github.com/Transient-Onlooker/WorldWords) | 영어 단어 학습을 위한 Kotlin 기반 안드로이드 앱. Jetpack Compose 계열 구조와 모바일 학습 UI/UX를 실험 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) |
 | [se3cdocs](https://github.com/SE3C/se3cdocs) | SE3C 동아리 공식 문서 포털. Markdown 기반 문서를 React로 렌더링하고 커스텀 도메인으로 배포한 문서화 웹사이트 | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) |
 | [openjacks](https://github.com/Transient-Onlooker/openjacks) | React + Express 기반 웹앱. API 서버 연동 구조와 배포 설정을 포함한 웹 프로젝트 | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) |
-| [chat-application](https://github.com/Transient-Onlooker/chat-application) | WebSocket 기반 실시간 채팅 서버/클라이언트 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=flat-square&logoColor=white) |
-| [golf-schedule-generator](https://github.com/Transient-Onlooker/golf-schedule-generator) | JSON 입력 기반 골프 대회 일정 자동 생성 GUI 툴 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-FFD43B?style=flat-square&logo=python&logoColor=black) |
 | [personnel-management-spreadsheet](https://github.com/Transient-Onlooker/personnel-management-spreadsheet) | 인원 관리용 Python 데스크탑 앱. 실행 파일 빌드까지 포함한 도구형 프로젝트 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tkinter](https://img.shields.io/badge/Tkinter-FFD43B?style=flat-square&logo=python&logoColor=black) |
-| [music-box-score-converter](https://github.com/Transient-Onlooker/music-box-score-converter) | 오르골 악보 숫자 표기를 MIDI로 변환하는 Python 스크립트 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![MIDI](https://img.shields.io/badge/MIDI-5A4FCF?style=flat-square&logoColor=white) |
-| [kim-game](https://github.com/Transient-Onlooker/kim-game) | Python 기반 미니 게임 프로젝트 | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| [temp-nvidiasetup](https://github.com/Transient-Onlooker/temp-nvidiasetup) | NVIDIA L40S 환경의 Pixal3D/관련 구성요소를 버전 고정·사전검사·스모크 테스트로 재현하는 설치 자동화 | ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white) |
+| [chatgpt-vocab-generator](https://github.com/Transient-Onlooker/chatgpt-vocab-generator) | 영어 단어장 생성 실험의 Go 기반 구현. 이전 Python/Wails 시도와 구분해 유지하는 버전 | ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![CLI](https://img.shields.io/badge/CLI-111111?style=flat-square&logo=gnubash&logoColor=white) |
 
 </details>
 
@@ -328,12 +348,26 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 
 <br/>
 
+과거 실험과 종료된 소규모 프로젝트는 삭제 대신 읽기 전용으로 보존합니다. 아래에는 공개 아카이브 저장소만 표시합니다 (2026-10-18 기준).
+
 | 프로젝트 | 시도한 것 | 배운 점 |
 |---|---|---|
 | [chatgpt-vocab-generator-wails](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | ChatGPT 단어장 생성기의 Wails GUI 버전 | Go/Wails 기반 GUI 앱의 크로스 컴파일 제약 확인 |
 | [chatgpt-vocab-generator-python](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | Python 기반 ChatGPT 단어장 생성기 | Python 앱 배포와 크로스 컴파일의 한계 확인 |
 | [autoomr](https://github.com/Transient-Onlooker/autoomr.git) | 초기 OMR 자동화 프로젝트 | 3모서리식 알고리즘 도입 후 `newomr`로 구조 개선 |
 | [HWPXport](https://github.com/Transient-Onlooker/HWPXport.git) | 시험지를 HWP 형식으로 생성하는 앱 | HWPX 문서 구조의 복잡성과 자동화 한계 이해 |
+| [arcacon-downloader](https://github.com/Transient-Onlooker/arcacon-downloader) | 이미지 다운로드·GIF 변환 자동화 CLI | 로그인 세션과 수집 자동화 실험 |
+| [seoul3dmetromap](https://github.com/Transient-Onlooker/seoul3dmetromap) | 서울 지하철 접근성의 2.5D 지도 시각화 | 공간 데이터 정규화와 시각화 |
+| [chat-application](https://github.com/Transient-Onlooker/chat-application) | WebSocket 기반 채팅 서비스 | 실시간 메시징·알림 처리 |
+| [gemini-vocab-generator](https://github.com/Transient-Onlooker/gemini-vocab-generator) | Gemini API를 이용한 초기 단어장 생성기 | 초기 Python GUI와 AI 연동 실험 |
+| [golf-schedule-generator](https://github.com/Transient-Onlooker/golf-schedule-generator) | 골프 경기 일정 자동 생성 도구 | 제약 조건을 가진 일정 생성 |
+| [inventory-management-spreadsheet](https://github.com/Transient-Onlooker/inventory-management-spreadsheet) | 동아리 행사 예약·재고 관리 앱 | Google Sheets 기반 업무 자동화 |
+| [music-box-score-converter](https://github.com/Transient-Onlooker/music-box-score-converter) | 숫자 악보를 MIDI로 변환하는 스크립트 | 악보 규칙과 MIDI 이벤트 매핑 |
+| [kim-game](https://github.com/Transient-Onlooker/kim-game) | Python 미니 게임 프로젝트 | 소규모 게임 제작 실험 |
+| [dapji-maker](https://github.com/Transient-Onlooker/dapji-maker) | 답지 제작 MVP Mermaid 파이프라인 설계 | 문서 생성 자동화의 초기 구조화 |
+| [map3d-bug](https://github.com/Transient-Onlooker/map3d-bug) | Android Maps3D 0.2.0 충돌 최소 재현 | SDK 오류 재현·환경 기록 |
+| [sat](https://github.com/Transient-Onlooker/sat) | 프런트엔드 실험 프로젝트 | 초기 구현 기록 보존 |
+| [WorldWords](https://github.com/Transient-Onlooker/WorldWords) | Kotlin 기반 단어 학습 Android 앱 | 모바일 학습 UI 실험 |
 
 </details>
 
@@ -360,7 +394,7 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 
 ## 💡 관심 분야
 
-항공우주공학 · 수치 시뮬레이션 · 웹 서비스 개발 · 시스템 설계 · AI 개발 도구 · 자동화
+항공우주공학 · 수치 시뮬레이션 · 웹 서비스 개발 · 시스템 설계 · AI 개발 도구 · 자동화 · Bluetooth LE/HID
 
 ---
 
