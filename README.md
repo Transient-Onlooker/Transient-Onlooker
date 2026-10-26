@@ -239,12 +239,12 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 
 ---
 
-### 8. [siri-remote-for-windows](https://github.com/Transient-Onlooker/siri-remote-for-windows)
+### 8. [AppleRemoteWin · A2854 Windows 포팅](https://github.com/Transient-Onlooker/AppleRemoteWin/tree/feat/a2854-support)
 
 Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리모컨으로 활용하기 위한 **BLE/HID 리버스 엔지니어링 및 Windows 포팅 실험**입니다.  
-기존 [siri-remote](https://github.com/azais-corentin/siri-remote)를 포크해 Linux/BlueZ 실기기 입력 수신 결과를 정리하고, Windows에서 장치 인식·GATT·HID 드라이버 바인딩을 읽기 전용으로 진단합니다.
+[AppleRemoteWin의 `feat/a2854-support` 브랜치](https://github.com/Transient-Onlooker/AppleRemoteWin/tree/feat/a2854-support)에서 Windows 지원을 개발하고 있습니다. 이전 [siri-remote-for-windows](https://github.com/Transient-Onlooker/siri-remote-for-windows)는 **2026-10-21 통합 안내에 따라 이력 보존용 저장소**가 되었으며, 코드 스냅샷과 기술 분석은 AppleRemoteWin의 `reference/siri-remote-for-windows/` 및 [`docs/a2854/`](https://github.com/Transient-Onlooker/AppleRemoteWin/tree/feat/a2854-support/docs/a2854)에 모았습니다.
 
-**현재 상태:** Linux 환경에서 버튼·터치 이벤트 수신을 확인했습니다. Windows에서도 BLE 연결과 HID 서비스(0x1812) 검색은 성공했지만, HID 특성 접근 제한과 장치 드라이버 Code 10 문제를 조사 중입니다. **Windows 네이티브 입력 제어 기능은 아직 구현·검증되지 않았습니다.**
+**현재 상태:** 기존 Linux 실험에서 버튼·터치 이벤트 수신을 확인했고, Windows용 A2854 디코더와 진단 도구를 개발했습니다. **Windows 실기기 입력 수신과 마우스·미디어 제어는 아직 검증되지 않았습니다.** 현재 진행 상황과 실험 제약은 [A2854 프로젝트 문서](https://github.com/Transient-Onlooker/AppleRemoteWin/blob/feat/a2854-support/docs/a2854/README.md)를 기준으로 확인합니다.
 
 **주요 특징**
 
@@ -252,7 +252,7 @@ Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리
 - Windows WinRT 기반 BLE/GATT 서비스 검색과 접근 상태 진단
 - HID 인터페이스·PnP 관계·Kernel-PnP 오류의 읽기 전용 진단 도구
 - 재현 가능한 실험 결과, Windows 포팅 계획, 오프라인 fixture 테스트 정리
-- 원본 프로젝트의 GPL-3.0 라이선스와 출처 유지
+- 통합한 Linux 원본 코드의 GPL-3.0 라이선스와 출처 유지
 
 **Tech**
 
@@ -329,7 +329,7 @@ Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리
 
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
-| [tokscale (기여 포크)](https://github.com/Transient-Onlooker/tokscale) | 여러 AI 코딩 에이전트의 토큰·비용을 분석하는 [Tokscale 원본 프로젝트](https://github.com/junhoyeo/tokscale)의 포크. OpenCodex combo 요청을 실제 처리 모델에 연결하는 Codex 사용량 귀속 로직을 구현해 [upstream PR #1400](https://github.com/junhoyeo/tokscale/pull/1400)으로 제안했습니다(검토 중). | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![CLI](https://img.shields.io/badge/CLI-111111?style=flat-square&logo=gnubash&logoColor=white) |
+| [tokscale (기여 포크)](https://github.com/Transient-Onlooker/tokscale) | 여러 AI 코딩 에이전트의 토큰·비용을 분석하는 [Tokscale 원본 프로젝트](https://github.com/junhoyeo/tokscale)의 포크. OpenCodex combo 요청을 실제 처리 모델에 연결하는 Codex 사용량 귀속 로직을 구현한 [upstream PR #1400](https://github.com/junhoyeo/tokscale/pull/1400)이 2026-10-17 병합됐습니다. | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![CLI](https://img.shields.io/badge/CLI-111111?style=flat-square&logo=gnubash&logoColor=white) |
 | [TRINITY-OS (기여 포크)](https://github.com/Transient-Onlooker/TRINITY-OS) | [TRINITY-OS 원본](https://github.com/itsmekk-mario/TRINITY-OS)을 바탕으로 학습 기록에 수식과 함수 그래프를 작성·저장·재표시하는 패치를 작업한 포크. 기존 데이터 스키마를 유지하며 자체 수식 파서를 사용합니다. | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Math](https://img.shields.io/badge/Math-Rendering-555555?style=flat-square) |
 | [MinimalMP3](https://github.com/Transient-Onlooker/MinimalMP3) | LG V30을 음악 플레이어처럼 사용하기 위한 Android 홈 런처. 검은 화면과 앨범 아트 중심 UI에서 Spotify·Samsung Music 등 설치된 음악 앱의 MediaSession을 제어하고, 앱 서랍·런처 전환·재생 제어를 제공합니다. | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white) |
 | [step-only-android](https://github.com/Transient-Onlooker/step-only-android) | 외부 통신 없이 기기 내 걸음 수 센서와 로컬 DB만 사용하는 오프라인 만보기 앱. Foreground Service와 센서 delta 누적 방식을 구현 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white) ![Room](https://img.shields.io/badge/Room-3DDC84?style=flat-square&logo=android&logoColor=white) |
@@ -348,7 +348,7 @@ Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리
 
 <br/>
 
-과거 실험과 종료된 소규모 프로젝트는 삭제 대신 읽기 전용으로 보존합니다. 아래에는 공개 아카이브 저장소만 표시합니다 (2026-10-18 기준).
+과거 실험과 종료된 소규모 프로젝트는 삭제 대신 읽기 전용으로 보존합니다. 아래에는 공개 아카이브 저장소만 표시합니다 (2026-10-26 확인).
 
 | 프로젝트 | 시도한 것 | 배운 점 |
 |---|---|---|
