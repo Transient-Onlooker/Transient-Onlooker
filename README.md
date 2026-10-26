@@ -32,6 +32,8 @@ TypeScript, Python, Kotlin을 중심으로 Rust도 활용하며,
 
 ## 🎯 대표 프로젝트
 
+구현 결과를 소개하는 목록입니다. 아래 SIR Model Series, `rocket-3d-4all`, `newomr`는 개발을 종료하고 아카이브로 보존하고 있습니다 (2026-10-27 확인).
+
 ### 1. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
 
 열품타의 공부 타이머·기록·그룹을 PC와 모바일 웹에서 다루는 비공식 클라이언트입니다.  
@@ -98,7 +100,7 @@ Cloudflare D1에서 **입력 원문(`captures`)과 수정 가능한 항목(`item
 
 Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, WebSocket 변경 알림과 재조회로 화면을 최신화합니다. 삭제 복원·Undo·편집 실패 시 draft 복원으로 작업 안정성을 높였습니다.
 
-[tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)은 별도의 FastAPI·SQLite·NVIDIA NIM 기반 초기 실험으로, 명령어 기반 기록과 수정·삭제 전 승인 흐름을 검증한 프로토타입입니다.
+[tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)은 별도의 FastAPI·SQLite·NVIDIA NIM 기반 초기 실험으로, 명령어 기반 기록과 수정·삭제 전 승인 흐름을 검증한 **아카이브된 프로토타입**입니다.
 
 **주요 특징**
 
@@ -124,6 +126,8 @@ Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, W
 ---
 
 ### 4. SIR Model Series
+
+**아카이브:** 시리즈의 세 저장소는 2026-10-26 개발 종료 상태로 보존했습니다.
 
 전염병 확산을 서로 다른 수학적 방법으로 구현한 탐구 프로젝트 시리즈입니다.  
 **2차원 격자 기반 확률적 개체 모델 → SciPy 연립미분방정식 기반 모델 → TypeScript/RK4 웹 시뮬레이터**로 접근법을 발전시켰습니다.
@@ -188,6 +192,8 @@ Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, W
 
 ### 6. [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all)
 
+**아카이브:** 2026-10-26부터 구현 결과를 읽기 전용으로 보존합니다.
+
 브라우저에서 실행되는 로켓 비행 시뮬레이터 프로젝트입니다.  
 추력, 연료 소모, 항력, 중력, 대기 밀도, 바람 등의 요소를 반영해 비행을 계산하고, 결과를 2D 차트와 3D 뷰로 함께 시각화했습니다.
 
@@ -215,6 +221,8 @@ RK4 기반 수치 적분과 비행 이벤트 추출, 동기화된 2D/3D 재생�
 ---
 
 ### 7. [newomr](https://github.com/Transient-Onlooker/newomr)
+
+**아카이브:** 2026-10-26부터 구현 결과를 읽기 전용으로 보존합니다.
 
 OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채점 웹앱입니다.  
 기존 `autoomr`를 개선해 **3개 기준 마커(TL·TR·BR)에 따른 회전·크기 정렬**과 Canvas 기반 버블 판독을 구현했습니다.
@@ -348,10 +356,21 @@ Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리
 
 <br/>
 
-과거 실험과 종료된 소규모 프로젝트는 삭제 대신 읽기 전용으로 보존합니다. 아래에는 공개 아카이브 저장소만 표시합니다 (2026-10-26 확인).
+과거 실험과 종료된 소규모 프로젝트는 읽기 전용으로 보존합니다. 아래에는 공개 아카이브 저장소만 표시합니다 (2026-10-27 확인). 위 대표·기타 프로젝트의 소개는 구현 이력이며, 이 표에 포함된 저장소의 현재 유지보수를 뜻하지 않습니다.
 
 | 프로젝트 | 시도한 것 | 배운 점 |
 |---|---|---|
+| [sir-model-classic](https://github.com/Transient-Onlooker/sir-model-classic) | 격자 기반 전염병 확산 모델 | 개체 이동·격리·정책 이벤트의 확률적 모형 |
+| [sir-model-differential-equations](https://github.com/Transient-Onlooker/sir-model-differential-equations) | Python SIR/SEIRS 수치 모델 | SciPy 적분과 GUI 시나리오 구성 |
+| [sir-model-diff-web](https://github.com/Transient-Onlooker/sir-model-diff-web) | 브라우저 수치 모델 | RK4 기반 구획 모델 시각화 |
+| [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all) | 교육용 로켓 비행 분석 | 수치 적분·비행 이벤트·시나리오 비교 |
+| [newomr](https://github.com/Transient-Onlooker/newomr) | 브라우저 OMR 채점 | 3점 마커 정렬과 버블 판독 |
+| [personnel-management-spreadsheet](https://github.com/Transient-Onlooker/personnel-management-spreadsheet) | 인원 배치·예약 도구 | Tkinter와 Google Sheets 연동 |
+| [chatgpt-vocab-generator](https://github.com/Transient-Onlooker/chatgpt-vocab-generator) | Go TUI 어휘 문제 생성기 | Go TUI와 별도 Python GUI 실행 경로 |
+| [step-only-android](https://github.com/Transient-Onlooker/step-only-android) | 오프라인 만보기 | 기기 센서·Room·포그라운드 서비스 |
+| [openjacks](https://github.com/Transient-Onlooker/openjacks) | 블랙잭 웹앱 | 규칙 처리·전략 점수·세션 기록 |
+| [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent) | Telegram 기록 에이전트 초기 실험 | 원문 보존과 수정·삭제 승인 흐름 |
+| [siri-remote-for-windows](https://github.com/Transient-Onlooker/siri-remote-for-windows) | A2854 Linux/BLE 및 Windows 진단 실험 | AppleRemoteWin으로 통합한 기술 이력 보존 |
 | [chatgpt-vocab-generator-wails](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-wails.git) | ChatGPT 단어장 생성기의 Wails GUI 버전 | Go/Wails 기반 GUI 앱의 크로스 컴파일 제약 확인 |
 | [chatgpt-vocab-generator-python](https://github.com/Transient-Onlooker/chatgpt-vocab-generator-python.git) | Python 기반 ChatGPT 단어장 생성기 | Python 앱 배포와 크로스 컴파일의 한계 확인 |
 | [autoomr](https://github.com/Transient-Onlooker/autoomr.git) | 초기 OMR 자동화 프로젝트 | 3모서리식 알고리즘 도입 후 `newomr`로 구조 개선 |
