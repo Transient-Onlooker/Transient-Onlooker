@@ -8,8 +8,8 @@
 
 ### 시스템 설계 · 과학 모델링 · 웹 도구 개발
 
-TypeScript, Python, Kotlin을 중심으로 Rust도 활용하며,  
-과학 모델링과 실사용 도구를 만드는 개발자입니다.
+Python을 직접 작성하고, AI 코딩 에이전트와 함께 다양한 기술 스택의 제품을 개발합니다.  
+Open API · 자동화 · 시스템 설계 · 하드웨어 역공학 · 과학 모델링
 
 <br/>
 
@@ -23,16 +23,19 @@ TypeScript, Python, Kotlin을 중심으로 Rust도 활용하며,
 
 ## 🚀 About Me
 
-항공우주공학과 시스템 설계에 관심이 많은 개발자입니다.
+항공우주공학과 시스템 설계에 관심이 많으며, 일상에서 발견한 문제를 실제로 쓸 수 있는 도구로 만드는 개인 개발자입니다.
 
-수학·과학 모델을 코드로 구현하고, 실제로 사용할 수 있는 앱과 자동화 도구로 확장하는 데 집중하고 있습니다.  
-학습 기록·통계 웹서비스, 전염병 확산 및 로켓 비행 시뮬레이션, OMR 자동화, 3D 제작 도구, 개인 Capture & Workspace, AI 개발 도구 기여, 안드로이드 앱 등 다양한 아이디어를 직접 프로젝트로 구체화하고 있습니다. 최근에는 Bluetooth LE/HID 장치의 동작을 분석하며 Windows 네이티브 입력 지원 가능성을 탐구하고 있습니다.
+**직접 코딩하는 언어는 Python**이며, TypeScript·Kotlin·C#·Rust 등 다른 언어의 프로젝트는 주로 AI 코딩 에이전트의 도움으로 진행합니다. 요구사항과 구현 방향을 정하고, API 연동·테스트·장애 재현·실기기 검증을 반복하면서 결과물을 개선하는 방식으로 작업합니다.
+
+웹 서비스와 자동화 시스템뿐 아니라 수학·과학 시뮬레이션, 3D 제작 도구, Bluetooth LE/HID 역공학 등을 탐구하고 있습니다. GitHub Actions, Linux/WSL, Raspberry Pi 등 개발·운영 환경을 함께 활용합니다.
+
+**대표 프로젝트:** [ypt-web](https://github.com/Transient-Onlooker/ypt-web) · [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin)
 
 ---
 
 ## 🎯 대표 프로젝트
 
-구현 결과를 소개하는 목록입니다. 아래 SIR Model Series, `rocket-3d-4all`, `newomr`는 개발을 종료하고 아카이브로 보존하고 있습니다 (2026-10-27 확인).
+공개 저장소에서 확인할 수 있는 대표 구현 결과입니다. 사용 기술은 직접 코딩과 AI 에이전트 기반 개발을 모두 포함합니다. SIR Model Series, `rocket-3d-4all`, `newomr`는 개발을 종료하고 아카이브로 보존하고 있습니다.
 
 ### 1. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
 
@@ -64,36 +67,7 @@ React 프론트엔드와 Cloudflare Workers API를 분리하고, D1을 이용해
 
 ---
 
-### 2. [openflight4and](https://github.com/Transient-Onlooker/openflight4and)
-
-출발지·목적지와 예상 비행시간을 선택해 가상 비행을 진행하는 Android 집중 앱입니다.  
-단순 카운트다운 대신 **공항 선택 → 좌석·보딩패스 → 지도 기반 비행 → 도착 기록**으로 이어지는 경험을 구현했습니다.
-
-Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 3D, 비행권·보상 시스템과 집중 잠금을 결합했습니다.
-
-**주요 특징**
-
-- Kotlin + Jetpack Compose 기반 Android 네이티브 앱
-- 대권 거리 기반 예상 비행시간과 2D·2.5D·3D 지도 표시
-- 좌석 선택·보딩패스·비행권·출석 및 광고 보상 흐름
-- 사용 정보 접근·오버레이 기반 단계별 집중 잠금
-- Firebase Auth, Google Sign-In 및 Cloudflare Worker/D1 연동
-- Room·DataStore 기반 로컬 상태 관리
-- GitHub Actions 기반 CI 빌드 흐름
-
-**Tech**
-
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
-![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle%20KTS-02303A?style=flat-square&logo=gradle&logoColor=white)
-
----
-
-### 3. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
+### 2. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
 
 Telegram으로 빠르게 기록하고 Web에서 정리하는 개인용 Capture & Workspace입니다.<br/>
 Cloudflare D1에서 **입력 원문(`captures`)과 수정 가능한 항목(`items`)을 분리**해 기록을 보존합니다.
@@ -125,7 +99,89 @@ Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, W
 
 ---
 
-### 4. SIR Model Series
+### 3. [AppleRemoteWin · A2854 Windows 포팅](https://github.com/Transient-Onlooker/AppleRemoteWin)
+
+Apple TV Siri Remote 3세대(A2854)를 Windows에서 마우스로 사용하기 위한 **BLE/HID 역공학 및 포팅 프로젝트**입니다. 기존 [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin) 및 Linux 실험 코드를 기반으로 A2854 입력·진단 경로를 확장하고 있습니다.
+
+**검증된 진행 상황(2026-10-25 기록):** 실제 Windows PC에서 A2854 마우스 입력이 약 100초 동작했고, 별도의 약 27초 GUI 세션에서 연결 종료 동작을 확인했습니다. 후속 GATT 안정성 개선은 오프라인 테스트 기록이 있지만 해당 변경의 실기기 검증은 진행 중입니다. [최신 기술 인수인계](https://github.com/Transient-Onlooker/AppleRemoteWin/blob/main/docs/HANDOFF_2026-10-25_A2854_CURRENT.md)
+
+**주요 특징**
+
+- Linux/BlueZ에서 A2854 버튼·터치 데이터 수집과 프로토콜 분석
+- Windows BLE/GATT·HID 인터페이스 및 연결 상태 진단
+- Windows 실기기 마우스 입력, GUI 종료 동작 실험과 재현 로그
+- 오프라인 회귀 테스트와 실제 하드웨어 검증을 구분해 기록
+- 기반 오픈소스의 저작자·라이선스 및 기존 코드 이력을 보존
+
+**Tech**
+
+![C%23](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET%2010-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
+![Bluetooth LE](https://img.shields.io/badge/Bluetooth%20LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
+![HID](https://img.shields.io/badge/HID-Diagnostics-555555?style=flat-square)
+
+---
+
+### 4. [openflight4and](https://github.com/Transient-Onlooker/openflight4and)
+
+출발지·목적지와 예상 비행시간을 선택해 가상 비행을 진행하는 Android 집중 앱입니다.  
+단순 카운트다운 대신 **공항 선택 → 좌석·보딩패스 → 지도 기반 비행 → 도착 기록**으로 이어지는 경험을 구현했습니다.
+
+Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 3D, 비행권·보상 시스템과 집중 잠금을 결합했습니다.
+
+**주요 특징**
+
+- Kotlin + Jetpack Compose 기반 Android 네이티브 앱
+- 대권 거리 기반 예상 비행시간과 2D·2.5D·3D 지도 표시
+- 좌석 선택·보딩패스·비행권·출석 및 광고 보상 흐름
+- 사용 정보 접근·오버레이 기반 단계별 집중 잠금
+- Firebase Auth, Google Sign-In 및 Cloudflare Worker/D1 연동
+- Room·DataStore 기반 로컬 상태 관리
+- GitHub Actions 기반 CI 빌드 흐름
+
+**Tech**
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
+![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle%20KTS-02303A?style=flat-square&logo=gradle&logoColor=white)
+
+---
+
+### 5. [BlocksTL](https://github.com/Transient-Onlooker/BlocksTL)
+
+브라우저에서 STL 모델을 조립식 블록으로 분할하고, 3D 프린팅용 결합 핀과 실험적 스프링 소켓을 생성하는 로컬 전용 도구입니다.
+서버 업로드 없이 Web Worker와 Manifold WASM으로 메시 분할·Boolean 연산을 처리하고, 분할 미리보기부터 생성 결과 검증, STL/ZIP 내보내기까지 하나의 흐름으로 제공합니다.
+
+[Live Demo](https://transient-onlooker.github.io/BlocksTL/)
+
+**주요 특징**
+
+- Binary/ASCII STL 입력과 2~8개 Z축 블록 분할
+- 고정 mm 치수의 결합 핀·실험적 스프링 소켓 및 19/20/21 맞춤 테스트 쿠폰 생성
+- 다중 절단면 connector footprint 검증과 Three.js 기반 결과 QA·3D 점검
+- Web Worker 기반 비차단 처리와 Manifold WASM 기반 메시 Boolean 연산
+- 블록별 STL 및 전체 ZIP 다운로드, GitHub Actions 검증 후 Pages 자동 배포
+
+**Tech**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Three.js](https://img.shields.io/badge/Three.js-111111?style=flat-square&logo=threedotjs&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
+![Web Worker](https://img.shields.io/badge/Web%20Worker-111111?style=flat-square)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+---
+
+### 6. SIR Model Series
 
 **아카이브:** 시리즈의 세 저장소는 2026-10-26 개발 종료 상태로 보존했습니다.
 
@@ -163,34 +219,7 @@ Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, W
 
 ---
 
-### 5. [BlocksTL](https://github.com/Transient-Onlooker/BlocksTL)
-
-브라우저에서 STL 모델을 조립식 블록으로 분할하고, 3D 프린팅용 결합 핀과 실험적 스프링 소켓을 생성하는 로컬 전용 도구입니다.
-서버 업로드 없이 Web Worker와 Manifold WASM으로 메시 분할·Boolean 연산을 처리하고, 분할 미리보기부터 생성 결과 검증, STL/ZIP 내보내기까지 하나의 흐름으로 제공합니다.
-
-[Live Demo](https://transient-onlooker.github.io/BlocksTL/)
-
-**주요 특징**
-
-- Binary/ASCII STL 입력과 2~8개 Z축 블록 분할
-- 고정 mm 치수의 결합 핀·실험적 스프링 소켓 및 19/20/21 맞춤 테스트 쿠폰 생성
-- 다중 절단면 connector footprint 검증과 Three.js 기반 결과 QA·3D 점검
-- Web Worker 기반 비차단 처리와 Manifold WASM 기반 메시 Boolean 연산
-- 블록별 STL 및 전체 ZIP 다운로드, GitHub Actions 검증 후 Pages 자동 배포
-
-**Tech**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Three.js](https://img.shields.io/badge/Three.js-111111?style=flat-square&logo=threedotjs&logoColor=white)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
-![Web Worker](https://img.shields.io/badge/Web%20Worker-111111?style=flat-square)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
----
-
-### 6. [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all)
+### 7. [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all)
 
 **아카이브:** 2026-10-26부터 구현 결과를 읽기 전용으로 보존합니다.
 
@@ -220,7 +249,7 @@ RK4 기반 수치 적분과 비행 이벤트 추출, 동기화된 2D/3D 재생�
 
 ---
 
-### 7. [newomr](https://github.com/Transient-Onlooker/newomr)
+### 8. [newomr](https://github.com/Transient-Onlooker/newomr)
 
 **아카이브:** 2026-10-26부터 구현 결과를 읽기 전용으로 보존합니다.
 
@@ -247,38 +276,19 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 
 ---
 
-### 8. [AppleRemoteWin · A2854 Windows 포팅](https://github.com/Transient-Onlooker/AppleRemoteWin/tree/feat/a2854-support)
-
-Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리모컨으로 활용하기 위한 **BLE/HID 리버스 엔지니어링 및 Windows 포팅 실험**입니다.  
-[AppleRemoteWin의 `feat/a2854-support` 브랜치](https://github.com/Transient-Onlooker/AppleRemoteWin/tree/feat/a2854-support)에서 Windows 지원을 개발하고 있습니다. 이전 [siri-remote-for-windows](https://github.com/Transient-Onlooker/siri-remote-for-windows)는 **2026-10-21 통합 안내에 따라 이력 보존용 저장소**가 되었으며, 코드 스냅샷과 기술 분석은 AppleRemoteWin의 `reference/siri-remote-for-windows/` 및 [`docs/a2854/`](https://github.com/Transient-Onlooker/AppleRemoteWin/tree/feat/a2854-support/docs/a2854)에 모았습니다.
-
-**현재 상태:** 기존 Linux 실험에서 버튼·터치 이벤트 수신을 확인했고, Windows용 A2854 디코더와 진단 도구를 개발했습니다. **Windows 실기기 입력 수신과 마우스·미디어 제어는 아직 검증되지 않았습니다.** 현재 진행 상황과 실험 제약은 [A2854 프로젝트 문서](https://github.com/Transient-Onlooker/AppleRemoteWin/blob/feat/a2854-support/docs/a2854/README.md)를 기준으로 확인합니다.
-
-**주요 특징**
-
-- WSL2/BlueZ에서 A2854 버튼·터치·호버 이벤트 분석
-- Windows WinRT 기반 BLE/GATT 서비스 검색과 접근 상태 진단
-- HID 인터페이스·PnP 관계·Kernel-PnP 오류의 읽기 전용 진단 도구
-- 재현 가능한 실험 결과, Windows 포팅 계획, 오프라인 fixture 테스트 정리
-- 통합한 Linux 원본 코드의 GPL-3.0 라이선스와 출처 유지
-
-**Tech**
-
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
-![Bluetooth LE](https://img.shields.io/badge/Bluetooth%20LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white)
-![HID](https://img.shields.io/badge/HID-Diagnostics-555555?style=flat-square)
-
----
-
 ## 🛠️ Tech Stack & Tools
 
-### Main Languages
+프로젝트에서 사용한 기술과 직접 코딩할 수 있는 언어를 구분합니다. 아래 프레임워크·SDK 목록은 프로젝트 구현 경험을 의미하며, 모두를 AI 없이 독립적으로 다룬다는 뜻은 아닙니다.
+
+### 직접 코딩하는 언어
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+### AI 코딩 에이전트와 함께 사용한 언어
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![C%23](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 
 ### Frontend / App
@@ -321,6 +331,9 @@ Apple TV Siri Remote 3세대(A2854)를 Windows PC에서 마우스·미디어 리
 ![Fusion 360](https://img.shields.io/badge/Fusion%20360-FF6600?style=flat-square&logo=autodesk&logoColor=white)
 ![Codex CLI](https://img.shields.io/badge/Codex%20CLI-111111?style=flat-square&logo=openai&logoColor=white)
 ![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![OpenCodex](https://img.shields.io/badge/OpenCodex-AI%20Routing-333333?style=flat-square)
+
+Codex CLI·Gemini CLI·OpenCodex와 GitHub Actions 등을 이용해 AI 보조 구현, 테스트, 자동화 작업을 진행합니다.
 
 ### Secondary / Used Before
 
