@@ -8,8 +8,8 @@
 
 ### 시스템 설계 · 과학 모델링 · 웹 도구 개발
 
-Python을 직접 작성하고, AI 코딩 에이전트와 함께 다양한 기술 스택의 제품을 개발합니다.  
-Open API · 자동화 · 시스템 설계 · 하드웨어 역공학 · 과학 모델링
+Python을 중심으로 웹 서비스, 자동화 도구, 과학·하드웨어 프로젝트를 개발합니다.  
+Open API · 시스템 설계 · 하드웨어 역공학 · 과학 모델링
 
 <br/>
 
@@ -25,7 +25,7 @@ Open API · 자동화 · 시스템 설계 · 하드웨어 역공학 · 과학 �
 
 항공우주공학과 시스템 설계에 관심이 많으며, 일상에서 발견한 문제를 실제로 쓸 수 있는 도구로 만드는 개인 개발자입니다.
 
-**직접 코딩하는 언어는 Python**이며, TypeScript·Kotlin·C#·Rust 등 다른 언어의 프로젝트는 주로 AI 코딩 에이전트의 도움으로 진행합니다. 요구사항과 구현 방향을 정하고, API 연동·테스트·장애 재현·실기기 검증을 반복하면서 결과물을 개선하는 방식으로 작업합니다.
+Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotlin·C#·Rust 등 다양한 언어와 기술도 활용하고 있습니다. 요구사항 정의와 시스템 설계부터 API 연동, 테스트, 오류 분석, 실기기 검증까지 진행하며 결과물을 개선하고 있습니다.
 
 웹 서비스와 자동화 시스템뿐 아니라 수학·과학 시뮬레이션, 3D 제작 도구, Bluetooth LE/HID 역공학 등을 탐구하고 있습니다. GitHub Actions, Linux/WSL, Raspberry Pi 등 개발·운영 환경을 함께 활용합니다.
 
@@ -35,7 +35,7 @@ Open API · 자동화 · 시스템 설계 · 하드웨어 역공학 · 과학 �
 
 ## 🎯 대표 프로젝트
 
-공개 저장소에서 확인할 수 있는 대표 구현 결과입니다. 사용 기술은 직접 코딩과 AI 에이전트 기반 개발을 모두 포함합니다. SIR Model Series, `rocket-3d-4all`, `newomr`는 개발을 종료하고 아카이브로 보존하고 있습니다.
+공개 저장소에서 확인할 수 있는 대표 프로젝트입니다. SIR Model Series, `rocket-3d-4all`, `newomr`는 개발을 종료하고 아카이브로 보존하고 있습니다.
 
 ### 1. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
 
@@ -278,13 +278,13 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 
 ## 🛠️ Tech Stack & Tools
 
-프로젝트에서 사용한 기술과 직접 코딩할 수 있는 언어를 구분합니다. 아래 프레임워크·SDK 목록은 프로젝트 구현 경험을 의미하며, 모두를 AI 없이 독립적으로 다룬다는 뜻은 아닙니다.
+프로젝트에서 활용한 언어와 도구를 정리했습니다.
 
-### 직접 코딩하는 언어
+### 주 사용 언어
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-### AI 코딩 에이전트와 함께 사용한 언어
+### 프로젝트에서 활용한 기타 언어
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
@@ -333,7 +333,7 @@ OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채�
 ![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 ![OpenCodex](https://img.shields.io/badge/OpenCodex-AI%20Routing-333333?style=flat-square)
 
-Codex CLI·Gemini CLI·OpenCodex와 GitHub Actions 등을 이용해 AI 보조 구현, 테스트, 자동화 작업을 진행합니다.
+Codex CLI·Gemini CLI·OpenCodex 등 개발 도구와 GitHub Actions 기반 워크플로를 활용합니다.
 
 ### Secondary / Used Before
 
