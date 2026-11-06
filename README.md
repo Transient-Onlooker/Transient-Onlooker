@@ -31,6 +31,8 @@ Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotl
 
 **대표 프로젝트:** [ypt-web](https://github.com/Transient-Onlooker/ypt-web) · [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin)
 
+**진행 중인 하드웨어 실험:** [ESP32 실링팬 조명·회전방향 제어](projects/ceiling-fan/README.md) — IR/RF 리모컨 방식 및 송수신 하드웨어 검증 단계
+
 ---
 
 ## 🎯 대표 프로젝트
