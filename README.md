@@ -15,7 +15,6 @@ Open API · 시스템 설계 · 하드웨어 역공학 · 과학 모델링
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Transient-Onlooker)
 [![Projects](https://img.shields.io/badge/🎯%20Projects-111111?style=for-the-badge)](#-대표-프로젝트)
-[![Contact](https://img.shields.io/badge/Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](#-연결)
 
 </div>
 
@@ -23,11 +22,11 @@ Open API · 시스템 설계 · 하드웨어 역공학 · 과학 모델링
 
 ## 🚀 About Me
 
-항공우주공학과 시스템 설계에 관심이 많으며, 일상에서 발견한 문제를 실제로 쓸 수 있는 도구로 만드는 개인 개발자입니다.
+공개 프로젝트의 구현과 검증 기록을 소개합니다.
 
 Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotlin·C#·Rust 등 다양한 언어와 기술도 활용하고 있습니다. 요구사항 정의와 시스템 설계부터 API 연동, 테스트, 오류 분석, 실기기 검증까지 진행하며 결과물을 개선하고 있습니다.
 
-웹 서비스와 자동화 시스템뿐 아니라 수학·과학 시뮬레이션, 3D 제작 도구, Bluetooth LE/HID 역공학 등을 탐구하고 있습니다. GitHub Actions, Linux/WSL, Raspberry Pi 등 개발·운영 환경을 함께 활용합니다.
+프로젝트별 소스 코드, 테스트, 빌드 및 사용 방법은 각 저장소에 정리돼 있습니다.
 
 **대표 프로젝트:** [OpenCigan](https://github.com/Transient-Onlooker/opencigan) · [ypt-web](https://github.com/Transient-Onlooker/ypt-web) · [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin) · [openflight4and](https://github.com/Transient-Onlooker/openflight4and) · [SIR Model Series](https://github.com/Transient-Onlooker/sir-model-classic)
 
@@ -43,7 +42,7 @@ Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotl
 
 컴시간 시간표와 NEIS 급식을 한곳에서 확인하는 **오픈소스 학교 정보 웹 서비스**입니다. 로그인 없이 학교·학급을 선택할 수 있으며, 학년 비교와 교사별 시간표도 제공합니다.
 
-Svelte 프런트엔드와 Raspberry Pi의 Python API를 분리하고, 캐싱·장애 시 기존 데이터 활용·Cloudflare 기반 공개 경로를 구성했습니다. **운영 안정화, 보안 경계 및 실기기 QA는 진행 중**입니다.
+프런트엔드, 백엔드 API, 캐시 및 공개 배포를 구성했습니다. 운영 품질 검증은 계속 진행 중입니다.
 
 [Live Demo](https://opencigan.mcv.kr/) · [API 문서](https://github.com/Transient-Onlooker/opencigan/blob/main/docs/api-guide.md) · [로드맵](https://github.com/Transient-Onlooker/opencigan/blob/main/docs/roadmap.md)
 
@@ -368,21 +367,10 @@ Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 
 
 ---
 
-## 💡 관심 분야
-
-항공우주공학 · 수치 시뮬레이션 · 웹 서비스 개발 · 시스템 설계 · AI 개발 도구 · 자동화 · Bluetooth LE/HID
-
----
-
 ## 🔗 연결
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:swapomit@gmail.com)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/users/nomoregimal)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Transient-Onlooker)
 
 질문이 있으신가요?  
 [Issues](https://github.com/Transient-Onlooker/Transient-Onlooker/issues)를 통해 연락해주세요.
 
----
-
-> **0.1%의 창의적 인간이 미래를 발명하고, 0.9%의 통찰력 있는 인간이 그것을 사업화하며, 99%의 잉여인간은 역사의 변화를 모른 채 따라갈 뿐이다. (제레미 리프킨)**
