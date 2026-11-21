@@ -29,7 +29,7 @@ Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotl
 
 웹 서비스와 자동화 시스템뿐 아니라 수학·과학 시뮬레이션, 3D 제작 도구, Bluetooth LE/HID 역공학 등을 탐구하고 있습니다. GitHub Actions, Linux/WSL, Raspberry Pi 등 개발·운영 환경을 함께 활용합니다.
 
-**대표 프로젝트:** [ypt-web](https://github.com/Transient-Onlooker/ypt-web) · [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin)
+**대표 프로젝트:** [OpenCigan](https://github.com/Transient-Onlooker/opencigan) · [ypt-web](https://github.com/Transient-Onlooker/ypt-web) · [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin) · [openflight4and](https://github.com/Transient-Onlooker/openflight4and) · [SIR Model Series](https://github.com/Transient-Onlooker/sir-model-classic)
 
 **진행 중인 하드웨어 실험:** [ESP32 실링팬 조명·회전방향 제어](projects/ceiling-fan/README.md) — IR/RF 리모컨 방식 및 송수신 하드웨어 검증 단계
 
@@ -37,9 +37,35 @@ Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotl
 
 ## 🎯 대표 프로젝트
 
-공개 저장소에서 확인할 수 있는 대표 프로젝트입니다. SIR Model Series, `rocket-3d-4all`, `newomr`는 개발을 종료하고 아카이브로 보존하고 있습니다.
+공개 저장소에서 확인할 수 있는 대표 프로젝트 6개입니다. SIR Model Series는 첫 프로젝트로, 현재 아카이브 상태이지만 개발의 출발점이라는 의미에서 포함했습니다.
 
-### 1. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
+### 1. [OpenCigan](https://github.com/Transient-Onlooker/opencigan)
+
+컴시간 시간표와 NEIS 급식을 한곳에서 확인하는 **오픈소스 학교 정보 웹 서비스**입니다. 로그인 없이 학교·학급을 선택할 수 있으며, 학년 비교와 교사별 시간표도 제공합니다.
+
+Svelte 프런트엔드와 Raspberry Pi의 Python API를 분리하고, 캐싱·장애 시 기존 데이터 활용·Cloudflare 기반 공개 경로를 구성했습니다. **운영 안정화, 보안 경계 및 실기기 QA는 진행 중**입니다.
+
+[Live Demo](https://opencigan.mcv.kr/) · [API 문서](https://github.com/Transient-Onlooker/opencigan/blob/main/docs/api-guide.md) · [로드맵](https://github.com/Transient-Onlooker/opencigan/blob/main/docs/roadmap.md)
+
+**주요 특징**
+
+- 학교·학급·학년 비교·교사별 시간표와 NEIS 급식 통합 조회
+- 시간표 PNG/PDF 저장, 학급 링크 공유, ICS 캘린더 구독
+- TTL 캐시, 동일 요청 병합(single-flight), 오류 발생 시 기존 캐시 활용
+- Raspberry Pi 기반 Python API와 Cloudflare 기반 공개 배포 구성
+- AGPL-3.0 오픈소스, API 명세·기여 가이드·QA 및 운영 문서
+
+**Tech**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+---
+
+### 2. [ypt-web](https://github.com/Transient-Onlooker/ypt-web)
 
 열품타의 공부 타이머·기록·그룹을 PC와 모바일 웹에서 다루는 비공식 클라이언트입니다.  
 React 프론트엔드와 Cloudflare Workers API를 분리하고, D1을 이용해 인증 세션·타이머 상태·조회 캐시를 관리합니다.
@@ -69,7 +95,7 @@ React 프론트엔드와 Cloudflare Workers API를 분리하고, D1을 이용해
 
 ---
 
-### 2. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
+### 3. [NoteRelay](https://github.com/Transient-Onlooker/tg-note-agent-web) · [tg-note-agent](https://github.com/Transient-Onlooker/tg-note-agent)
 
 Telegram으로 빠르게 기록하고 Web에서 정리하는 개인용 Capture & Workspace입니다.<br/>
 Cloudflare D1에서 **입력 원문(`captures`)과 수정 가능한 항목(`items`)을 분리**해 기록을 보존합니다.
@@ -101,7 +127,7 @@ Inbox·Todo·Projects·Purchase·Print Queue 등을 한곳에서 관리하고, W
 
 ---
 
-### 3. [AppleRemoteWin · A2854 Windows 포팅](https://github.com/Transient-Onlooker/AppleRemoteWin)
+### 4. [AppleRemoteWin · A2854 Windows 포팅](https://github.com/Transient-Onlooker/AppleRemoteWin)
 
 Apple TV Siri Remote 3세대(A2854)를 Windows에서 마우스로 사용하기 위한 **BLE/HID 역공학 및 포팅 프로젝트**입니다. 기존 [AppleRemoteWin](https://github.com/Transient-Onlooker/AppleRemoteWin) 및 Linux 실험 코드를 기반으로 A2854 입력·진단 경로를 확장하고 있습니다.
 
@@ -127,7 +153,7 @@ Apple TV Siri Remote 3세대(A2854)를 Windows에서 마우스로 사용하기 �
 
 ---
 
-### 4. [openflight4and](https://github.com/Transient-Onlooker/openflight4and)
+### 5. [openflight4and](https://github.com/Transient-Onlooker/openflight4and)
 
 출발지·목적지와 예상 비행시간을 선택해 가상 비행을 진행하는 Android 집중 앱입니다.  
 단순 카운트다운 대신 **공항 선택 → 좌석·보딩패스 → 지도 기반 비행 → 도착 기록**으로 이어지는 경험을 구현했습니다.
@@ -156,36 +182,9 @@ Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 
 
 ---
 
-### 5. [BlocksTL](https://github.com/Transient-Onlooker/BlocksTL)
-
-브라우저에서 STL 모델을 조립식 블록으로 분할하고, 3D 프린팅용 결합 핀과 실험적 스프링 소켓을 생성하는 로컬 전용 도구입니다.
-서버 업로드 없이 Web Worker와 Manifold WASM으로 메시 분할·Boolean 연산을 처리하고, 분할 미리보기부터 생성 결과 검증, STL/ZIP 내보내기까지 하나의 흐름으로 제공합니다.
-
-[Live Demo](https://transient-onlooker.github.io/BlocksTL/)
-
-**주요 특징**
-
-- Binary/ASCII STL 입력과 2~8개 Z축 블록 분할
-- 고정 mm 치수의 결합 핀·실험적 스프링 소켓 및 19/20/21 맞춤 테스트 쿠폰 생성
-- 다중 절단면 connector footprint 검증과 Three.js 기반 결과 QA·3D 점검
-- Web Worker 기반 비차단 처리와 Manifold WASM 기반 메시 Boolean 연산
-- 블록별 STL 및 전체 ZIP 다운로드, GitHub Actions 검증 후 Pages 자동 배포
-
-**Tech**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Three.js](https://img.shields.io/badge/Three.js-111111?style=flat-square&logo=threedotjs&logoColor=white)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white)
-![Web Worker](https://img.shields.io/badge/Web%20Worker-111111?style=flat-square)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
----
-
 ### 6. SIR Model Series
 
-**아카이브:** 시리즈의 세 저장소는 2026-10-26 개발 종료 상태로 보존했습니다.
+**첫 프로젝트 · 아카이브:** 개인 개발을 시작하며 만든 첫 프로젝트 시리즈입니다. 세 저장소는 2026-10-26 개발 종료 상태로 보존했습니다.
 
 전염병 확산을 서로 다른 수학적 방법으로 구현한 탐구 프로젝트 시리즈입니다.  
 **2차원 격자 기반 확률적 개체 모델 → SciPy 연립미분방정식 기반 모델 → TypeScript/RK4 웹 시뮬레이터**로 접근법을 발전시켰습니다.
@@ -217,63 +216,6 @@ Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-
----
-
-### 7. [rocket-3d-4all](https://github.com/Transient-Onlooker/rocket-3d-4all)
-
-**아카이브:** 2026-10-26부터 구현 결과를 읽기 전용으로 보존합니다.
-
-브라우저에서 실행되는 로켓 비행 시뮬레이터 프로젝트입니다.  
-추력, 연료 소모, 항력, 중력, 대기 밀도, 바람 등의 요소를 반영해 비행을 계산하고, 결과를 2D 차트와 3D 뷰로 함께 시각화했습니다.
-
-RK4 기반 수치 적분과 비행 이벤트 추출, 동기화된 2D/3D 재생에 더해 **미션 평가·비행 제약 검증·불확실성 분석·시나리오 비교**를 제공하는 교육용 비행 분석 도구로 구성했습니다.
-
-**주요 특징**
-
-- RK4 기반 로켓 비행 수치 시뮬레이션
-- 추력, 연료 질량, 항력, 중력, 풍속 반영
-- 2D 궤적 차트 + 텔레메트리 차트 + 3D 비행 뷰 동시 제공
-- 재생 시점과 2D/3D 뷰 동기화
-- 미션 분석·비행 검증 게이트·불확실성 분석·시나리오 비교와 GitHub Pages 배포 구성
-
-**Tech**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat-square&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-111111?style=flat-square&logo=threedotjs&logoColor=white)
-![React Three Fiber](https://img.shields.io/badge/React%20Three%20Fiber-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-
----
-
-### 8. [newomr](https://github.com/Transient-Onlooker/newomr)
-
-**아카이브:** 2026-10-26부터 구현 결과를 읽기 전용으로 보존합니다.
-
-OMR 답안 이미지의 마커와 버블을 브라우저에서 분석하는 채점 웹앱입니다.  
-기존 `autoomr`를 개선해 **3개 기준 마커(TL·TR·BR)에 따른 회전·크기 정렬**과 Canvas 기반 버블 판독을 구현했습니다.
-
-[Demo](https://autoomr.mcv.kr)
-
-**주요 특징**
-
-- React + TypeScript 기반 OMR 채점 웹앱
-- 4개 모서리 영역에서 BFS로 마커 후보 탐색·노이즈 필터링
-- TL·TR·BR 기준 회전·축별 크기 정렬 (Homography와 구분)
-- Canvas 이진화·버블 내부의 검은 픽셀 비율로 답안 판정
-- 그리드 매핑·답안 편집·디버그 화면 제공
-- 기존 `autoomr` 이후 버전과 GitHub Pages 배포 구성
-
-**Tech**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
 ---
@@ -352,6 +294,7 @@ Codex CLI·Gemini CLI·OpenCodex 등 개발 도구와 GitHub Actions 기반 워�
 
 | 프로젝트 | 설명 | 기술 |
 |---|---|---|
+| [BlocksTL](https://github.com/Transient-Onlooker/BlocksTL) | 브라우저에서 STL 모델을 블록으로 분할해 3D 프린팅용 결합 핀·스프링 소켓을 생성하는 로컬 전용 도구. Web Worker·Manifold WASM으로 연산하며 STL/ZIP 내보내기 지원 | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=flat-square&logo=webassembly&logoColor=white) |
 | [tokscale (기여 포크)](https://github.com/Transient-Onlooker/tokscale) | 여러 AI 코딩 에이전트의 토큰·비용을 분석하는 [Tokscale 원본 프로젝트](https://github.com/junhoyeo/tokscale)의 포크. OpenCodex combo 요청을 실제 처리 모델에 연결하는 Codex 사용량 귀속 로직을 구현한 [upstream PR #1400](https://github.com/junhoyeo/tokscale/pull/1400)이 2026-10-17 병합됐습니다. | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![CLI](https://img.shields.io/badge/CLI-111111?style=flat-square&logo=gnubash&logoColor=white) |
 | [TRINITY-OS (기여 포크)](https://github.com/Transient-Onlooker/TRINITY-OS) | [TRINITY-OS 원본](https://github.com/itsmekk-mario/TRINITY-OS)을 바탕으로 학습 기록에 수식과 함수 그래프를 작성·저장·재표시하는 패치를 작업한 포크. 기존 데이터 스키마를 유지하며 자체 수식 파서를 사용합니다. | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Math](https://img.shields.io/badge/Math-Rendering-555555?style=flat-square) |
 | [MinimalMP3](https://github.com/Transient-Onlooker/MinimalMP3) | LG V30을 음악 플레이어처럼 사용하기 위한 Android 홈 런처. 검은 화면과 앨범 아트 중심 UI에서 Spotify·Samsung Music 등 설치된 음악 앱의 MediaSession을 제어하고, 앱 서랍·런처 전환·재생 제어를 제공합니다. | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white) |
