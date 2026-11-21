@@ -275,7 +275,6 @@ Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 
 ![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 ![OpenCodex](https://img.shields.io/badge/OpenCodex-AI%20Routing-333333?style=flat-square)
 
-Codex CLI·Gemini CLI·OpenCodex 등 개발 도구와 GitHub Actions 기반 워크플로를 활용합니다.
 
 ### Secondary / Used Before
 
