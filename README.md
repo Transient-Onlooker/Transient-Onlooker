@@ -37,7 +37,7 @@ Python을 주로 사용하며, 프로젝트의 목적에 따라 TypeScript·Kotl
 
 ## 🎯 대표 프로젝트
 
-공개 저장소에서 확인할 수 있는 대표 프로젝트 6개입니다. SIR Model Series는 첫 프로젝트로, 현재 아카이브 상태이지만 개발의 출발점이라는 의미에서 포함했습니다.
+공개 저장소에서 확인할 수 있는 대표 프로젝트입니다.
 
 ### 1. [OpenCigan](https://github.com/Transient-Onlooker/opencigan)
 
@@ -183,8 +183,6 @@ Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 
 ---
 
 ### 6. SIR Model Series
-
-**첫 프로젝트 · 아카이브:** 개인 개발을 시작하며 만든 첫 프로젝트 시리즈입니다. 세 저장소는 2026-10-26 개발 종료 상태로 보존했습니다.
 
 전염병 확산을 서로 다른 수학적 방법으로 구현한 탐구 프로젝트 시리즈입니다.  
 **2차원 격자 기반 확률적 개체 모델 → SciPy 연립미분방정식 기반 모델 → TypeScript/RK4 웹 시뮬레이터**로 접근법을 발전시켰습니다.
