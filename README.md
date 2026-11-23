@@ -376,7 +376,7 @@ Kotlin·Jetpack Compose로 UI를 구성하고 Firebase 인증, Google Maps/Maps 
 
 ## 🔗 연결
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:swapomit@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:junuh145858@gmail.com)
 
 ---
 
